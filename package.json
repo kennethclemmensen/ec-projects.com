@@ -1,0 +1,11 @@
+{
+	"name": "ec-projects",
+	"version": "1.0.0",
+	"devDependencies": {
+		"grunt": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-contrib-uglify": "*",
+		"grunt-contrib-less": "*",
+		"grunt-browser-sync": "*"
+	}
+}
