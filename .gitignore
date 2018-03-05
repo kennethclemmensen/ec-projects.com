@@ -9,6 +9,7 @@ db
 
 #User files
 public/sites/default/files
+!public/sites/default/files/.htaccess
 
 #Settings
 public/sites/default/settings.php
