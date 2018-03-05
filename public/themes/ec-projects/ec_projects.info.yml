@@ -1,0 +1,10 @@
+name: EC Projects
+type: theme
+core: 8.x
+libraries:
+  - ec_projects/jquery
+  - ec_projects/global-styling
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
