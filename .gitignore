@@ -9,3 +9,6 @@ db
 
 #User files
 public/sites/default/files
+
+#Settings
+public/sites/default/settings.php
