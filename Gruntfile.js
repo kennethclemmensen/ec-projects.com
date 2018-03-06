@@ -51,7 +51,7 @@ module.exports = function (grunt) {
                 notify: true,
                 host: '192.168.1.88',
                 proxy: '<%= pkg.name %>.test',
-                files: ['public/themes/<%= pkg.name %>/css/*.css', 'public/themes/<%= pkg.name %>/**/*.php', 'public/themes/<%= pkg.name %>/js/*.js']
+                files: ['public/themes/<%= pkg.name %>/css/*.css', 'public/themes/<%= pkg.name %>/**/*.twig', 'public/themes/<%= pkg.name %>/js/*.js']
             }
         }
     });
