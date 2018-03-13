@@ -5,7 +5,7 @@
 		"grunt": "*",
 		"grunt-contrib-watch": "*",
 		"grunt-contrib-uglify-es": "*",
-		"grunt-contrib-less": "*",
+		"assemble-less": "*",
 		"grunt-browser-sync": "*"
 	}
 }
