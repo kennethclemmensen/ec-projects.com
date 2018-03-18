@@ -45,7 +45,7 @@
  * @ingroup themeable
  */
 #}
-<div class="layout-container" id="my-id">
+{#<div class="layout-container">
 
   <header role="banner">
     {{ page.header }}
@@ -61,11 +61,11 @@
   {{ page.help }}
 
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    <a id="main-content" tabindex="-1"></a>#}{# link is in html.html.twig #}{#
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
+    </div>#}{# /.layout-content #}{#
 
     {% if page.sidebar_first %}
       <aside class="layout-sidebar-first" role="complementary">
@@ -87,4 +87,24 @@
     </footer>
   {% endif %}
 
-</div>{# /.layout-container #}
+</div>#}{# /.layout-container #}
+<header class="header">
+    <div class="header__container">
+        <a href="/">
+            <img src="/themes/ec-projects/images/title.png" alt="Ec projects">
+        </a>
+    </div>
+    <nav class="navigation">
+        <div class="navigation__container">
+            {{ page.menu }}
+        </div>
+    </nav>
+</header>
+<main class="page">
+    {{ page.content }}
+</main>
+{% if page.footer %}
+    <footer class="footer">
+        {{ page.footer }}
+    </footer>
+{% endif %}

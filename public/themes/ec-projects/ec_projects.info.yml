@@ -5,6 +5,6 @@ libraries:
   - ec_projects/jquery
   - ec_projects/global-styling
 regions:
-  header: 'Header'
+  menu: 'Menu'
   content: 'Content'
   footer: 'Footer'
