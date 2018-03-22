@@ -1,7 +1,11 @@
 .navigation {
-  background: url('/themes/ec-projects/images/menulinje.png') repeat-x;
-  width: 100%;
-  height: 35px;
+  display: none;
+  @media @tablet {
+    display: block;
+    background: url('/themes/ec-projects/images/menulinje.png') repeat-x;
+    width: 100%;
+    height: 35px;
+  }
 }
 
 .navigation__container {
