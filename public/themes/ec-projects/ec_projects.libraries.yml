@@ -1,3 +1,10 @@
+bootstrap:
+  version: 4.0.0
+  css:
+    theme:
+      css/bootstrap.min.css: {}
+      #https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css: { type: external, minified: true }
+
 global-styling:
   version: 1.x
   css:

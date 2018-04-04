@@ -2,6 +2,7 @@ name: EC Projects
 type: theme
 core: 8.x
 libraries:
+  - ec_projects/bootstrap
   - ec_projects/jquery
   - ec_projects/global-styling
 regions:
