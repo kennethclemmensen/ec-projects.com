@@ -1,0 +1,10 @@
+fdwc.file_download:
+    path: '/fdwc/download/{file}'
+    defaults:
+        _controller: '\Drupal\fdwc\Controller\FdwcController::download'
+    requirements:
+        _permission: 'fdwc download files'
+    options:
+        parameters:
+            file:
+                type: file
