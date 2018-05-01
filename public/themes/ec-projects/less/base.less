@@ -7,8 +7,20 @@
   }
 }
 
+html, body {
+  &.show-mobile-navigation {
+    height: 100%;
+    overflow: hidden;
+    @media @desktop {
+      height: initial;
+      overflow: initial;
+    }
+  }
+}
+
 body {
   background: @color-gray;
   min-width: 320px;
   max-width: 1920px;
+  position: relative;
 }

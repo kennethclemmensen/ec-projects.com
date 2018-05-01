@@ -1,12 +1,17 @@
 bootstrap:
-  version: 4.0.0
+  version: 4.1.0
   css:
     theme:
-      css/bootstrap.min.css: {}
-      #https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css: { type: external, minified: true }
+      https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css: { type: external, minified: true }
+
+font-awesome:
+  version: 5.0.9
+  css:
+    theme:
+      https://use.fontawesome.com/releases/v5.0.9/css/all.css: { type: external, minified: true }
 
 global-styling:
-  version: 1.x
+  version: 1.0
   css:
     theme:
       css/style.css: {}
@@ -18,5 +23,4 @@ global-styling:
 jquery:
   version: 3.3.1
   js:
-    js/libraries/jquery-3.3.1.min.js: {}
-    #https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js: { type: external, minified: true }

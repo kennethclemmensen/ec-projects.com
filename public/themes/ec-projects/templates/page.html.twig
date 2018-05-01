@@ -45,63 +45,51 @@
  * @ingroup themeable
  */
 #}
-{#<div class="layout-container">
-
-  <header role="banner">
-    {{ page.header }}
-  </header>
-
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
-
-  {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
-
-  {{ page.help }}
-
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>#}{# link is in html.html.twig #}{#
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>#}{# /.layout-content #}{#
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
-
-  </main>
-
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
-
-</div>#}{# /.layout-container #}
 <header class="header">
+    <div class="header__top-menu-container">
+        <div class="header__top-menu">
+            <a href="https://plus.google.com/111654804792483837226" class="header__top-menu-link" target="_blank">
+                <i class="fab fa-google-plus"></i>
+            </a>
+        </div>
+    </div>
     <div class="header__container">
-        <a href="/">
-            <img src="/themes/ec-projects/images/title.png" alt="Ec projects">
+        <a href="{{ front_page }}" class="header__site-name">{{ site_name }}</a>
+        <a href="#" class="header__nav-trigger">
+            <span class="header__nav-icon"></span>
         </a>
+        <nav class="navigation">
+            <div class="navigation__container">
+                {{ page.menu }}
+            </div>
+        </nav>
     </div>
 </header>
-<nav class="navigation">
-    <div class="navigation__container">
+<nav class="mobile-navigation">
+    <div class="mobile-navigation__container">
         {{ page.menu }}
+    </div>
+    <div class="mobile-navigation__footer">
+        <a href="https://plus.google.com/111654804792483837226" target="_blank">
+            <i class="fab fa-google-plus"></i>
+        </a>
     </div>
 </nav>
 <main class="page">
-    {{ page.content }}
+    {% if is_front %}
+        {{ page.content }}
+    {% else %}
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 col-lg-4">
+                    {{ page.sidebar }}
+                </div>
+                <div class="col-xs-12 col-md-9 col-lg-8">
+                    {{ page.content }}
+                </div>
+            </div>
+        </div>
+    {% endif %}
 </main>
 {% if page.footer %}
     <footer class="footer">

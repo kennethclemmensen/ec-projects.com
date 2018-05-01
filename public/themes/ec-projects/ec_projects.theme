@@ -1,0 +1,5 @@
+<?php
+function ec_projects_preprocess_page(array &$variables) {
+    $config = \Drupal::config('system.site');
+    $variables['site_name'] = $config->get('name');
+}
