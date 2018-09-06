@@ -1,8 +1,49 @@
 .page {
-  padding: @header-height 15px 0 15px;
+  padding-top: @header-height;
   @media @desktop {
-    width: @page-width-desktop;
-    margin: 0 auto;
     padding-top: @header-height-desktop;
+  }
+}
+
+.page__banner {
+  background: url('https://via.placeholder.com/1920x500') no-repeat center;
+  background-size: cover;
+  height: 250px;
+  @media @tablet {
+    height: 500px;
+  }
+}
+
+.page__container {
+  padding: 15px;
+  @media @desktop {
+    background: @color-gray;
+    width: @page-width-desktop;
+    margin: -80px auto 0 auto;
+    padding: 25px;
+  }
+}
+
+.page__content-container {
+  display: flex;
+  flex-direction: column;
+  @media @tablet {
+    flex-direction: row;
+  }
+}
+
+.page__content {
+  @media @tablet {
+    flex: 4;
+    padding: 0 20px 0 30px;
+  }
+}
+
+.page__sidebar {
+  @media @tablet {
+    flex: 2;
+  }
+  ul {
+    margin-left: 20px;
   }
 }

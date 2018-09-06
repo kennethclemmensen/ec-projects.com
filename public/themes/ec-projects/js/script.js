@@ -8,15 +8,11 @@ jQuery.noConflict();
         });
         var $header = $('.header');
         var headerScrollClass = 'header--scroll';
-        var $navigationContainer = $('.navigation__container');
-        var navigationScrollClass = 'navigation__container--scroll';
         $(window).scroll(function() {
             if(window.pageYOffset > 0) {
                 $header.addClass(headerScrollClass);
-                $navigationContainer.addClass(navigationScrollClass);
             } else {
                 $header.removeClass(headerScrollClass);
-                $navigationContainer.removeClass(navigationScrollClass);
             }
         });
     });

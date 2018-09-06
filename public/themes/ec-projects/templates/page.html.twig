@@ -46,23 +46,27 @@
  */
 #}
 <header class="header">
-    <div class="header__top-menu-container">
-        <div class="header__top-menu">
-            <a href="https://plus.google.com/111654804792483837226" class="header__top-menu-link" target="_blank">
-                <i class="fab fa-google-plus"></i>
-            </a>
-        </div>
-    </div>
     <div class="header__container">
-        <a href="{{ front_page }}" class="header__site-name">{{ site_name }}</a>
+        <div class="header__logo">
+            <a href="{{ front_page }}">{{ site_name }}</a>
+        </div>
         <a href="#" class="header__nav-trigger">
             <span class="header__nav-icon"></span>
         </a>
-        <nav class="navigation">
-            <div class="navigation__container">
-                {{ page.menu }}
-            </div>
-        </nav>
+        <div class="header__menu">
+            {{ page.menu }}
+        </div>
+        <div class="header__some">
+            <a href="https://www.facebook.com/ecprojectschannel" class="header__some-link" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/Ec_Projects" class="header__some-link" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://plus.google.com/111654804792483837226" class="header__some-link" target="_blank">
+                <i class="fab fa-google-plus"></i>
+            </a>
+        </div>
     </div>
 </header>
 <nav class="mobile-navigation">
@@ -70,26 +74,33 @@
         {{ page.menu }}
     </div>
     <div class="mobile-navigation__footer">
-        <a href="https://plus.google.com/111654804792483837226" target="_blank">
+        <a href="https://www.facebook.com/ecprojectschannel" class="mobile-navigation__footer-link" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/Ec_Projects" class="mobile-navigation__footer-link" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://plus.google.com/111654804792483837226" class="mobile-navigation__footer-link" target="_blank">
             <i class="fab fa-google-plus"></i>
         </a>
     </div>
 </nav>
 <main class="page">
-    {% if is_front %}
-        {{ page.content }}
-    {% else %}
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-3 col-lg-4">
+    <div class="page__banner"></div>
+    <div class="page__container">
+        {% if is_front %}
+            {{ page.content }}
+        {% else %}
+            <div class="page__content-container">
+                <div class="page__sidebar">
                     {{ page.sidebar }}
                 </div>
-                <div class="col-xs-12 col-md-9 col-lg-8">
+                <div class="page__content">
                     {{ page.content }}
                 </div>
             </div>
-        </div>
-    {% endif %}
+        {% endif %}
+    </div>
 </main>
 {% if page.footer %}
     <footer class="footer">

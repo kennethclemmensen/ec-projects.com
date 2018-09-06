@@ -28,7 +28,6 @@
     list-style: disc inside;
     li {
       margin-bottom: 15px;
-      text-indent: 0.5em;
     }
   }
 }
@@ -39,8 +38,13 @@
   align-items: center;
   width: 100%;
   height: 80px;
-  border-top: 1px solid #000;
+  border-top: 1px solid @color-black;
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.mobile-navigation__footer-link {
+  margin: 0 25px;
+  font-size: 1.5em;
 }

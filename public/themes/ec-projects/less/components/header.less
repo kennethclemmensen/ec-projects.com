@@ -16,50 +16,29 @@
   &--scroll {
     @media @desktop {
       background: fade(@color-black, 80%);
-      height: 100px;
-      top: -32px;
+      height: 85px;
+      a {
+        color: @color-white;
+      }
     }
   }
-}
-
-.header__top-menu-container {
-  display: none;
-  @media @desktop {
-    background: @color-black;
-    display: flex;
-    justify-content: center;
-    padding: 4px 0;
-  }
-}
-
-.header__top-menu {
-  width: @page-width-desktop;
-  text-align: right;
-}
-
-.header__top-menu-link {
-  color: @color-white;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
   padding: 0 15px;
-  flex: 1;
   @media @desktop {
-    justify-content: flex-end;
     width: @page-width-desktop;
     margin: 0 auto;
-    padding-right: 0;
+    padding: 0;
   }
 }
 
-.header__site-name {
-
-  @media @desktop {
-    display: none;
-  }
+.header__logo {
+  width: 130px;
 }
 
 .header__nav-trigger {
@@ -89,4 +68,48 @@
   &::after {
     margin-top: 16px;
   }
+}
+
+.header__menu {
+  display: none;
+  @media @desktop {
+    display: block;
+  }
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 15px;
+      a {
+        font-size: 1.5em;
+        text-decoration: none;
+        &::after {
+          display: block;
+          width: 0;
+          content: '';
+          height: 2px;
+          .transition();
+        }
+        &:hover {
+          &::after {
+            background: @color-red;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header__some {
+  display: none;
+  @media @desktop {
+    display: flex;
+    justify-content: space-evenly;
+    width: 212px;
+  }
+}
+
+.header__some-link {
+  font-size: 1.5em;
+  text-decoration: none;
 }
