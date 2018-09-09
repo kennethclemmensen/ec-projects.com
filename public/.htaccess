@@ -1,3 +1,5 @@
+#AddType application/x-httpd-php-latest .php
+
 #
 # Apache/PHP/Drupal settings:
 #
