@@ -1,16 +1,40 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        browserSync: {
+            bsFiles: {
+                src: '<%= pkg.cssFolderPath %>/*.css'
+            },
+            options: {
+                debugInfo: true,
+                files: [
+                    '<%= pkg.cssFolderPath %>*.css',
+                    '<%= pkg.themeFolderPath %>**/*.php',
+                    '<%= pkg.jsFolderPath %>*.js'
+                ],
+                logConnections: true,
+                notify: true,
+                proxy: '<%= pkg.name %>.test',
+                watchTask: true
+            }
+        },
         less: {
             development: {
+                files: {
+                    '<%= pkg.cssFolderPath %>style.css': '<%= pkg.lessFolderPath %>style.less'
+                },
                 options: {
                     compress: true,
                     optimization: 1
-                },
+                }
+            }
+        },
+        uglify: {
+            my_target: {
                 files: {
-                    'public/themes/<%= pkg.name %>/css/style.css': 'public/themes/<%= pkg.name %>/less/style.less' //dest : src
+                    '<%= pkg.jsFolderPath %>minified/script.min.js': ['<%= pkg.jsFolderPath %>*.js']
                 }
             }
         },
@@ -19,47 +43,26 @@ module.exports = function (grunt) {
                 livereload: true
             },
             scripts: {
-                files: ['public/themes/<%= pkg.name %>/js/**/*.js'], //the files to watch
-                tasks: ['uglify'], //the task to do
+                files: ['<%= pkg.jsFolderPath %>**/*.js'],
                 options: {
                     spawn: false
-                }
+                },
+                tasks: ['uglify']
             },
             styles: {
-                files: ['public/themes/<%= pkg.name %>/less/**/*.less'], //the files to watch
-                tasks: ['less'], //the task to do
+                files: ['<%= pkg.lessFolderPath %>**/*.less'],
                 options: {
                     spawn: false
-                }
-            }
-        },
-        uglify: {
-            my_target: {
-                files: {
-                    'public/themes/<%= pkg.name %>/js/minified/script.min.js': ['public/themes/<%= pkg.name %>/js/*.js']
-                }
-            }
-        },
-        browserSync: {
-            bsFiles: {
-                src: 'public/themes/<%= pkg.name %>/css/*.css'
-            },
-            options: {
-                watchTask: true,
-                debugInfo: true,
-                logConnections: true,
-                notify: true,
-                host: '192.168.1.88',
-                proxy: '<%= pkg.name %>.test',
-                files: ['public/themes/<%= pkg.name %>/css/*.css', 'public/themes/<%= pkg.name %>/**/*.twig', 'public/themes/<%= pkg.name %>/js/*.js']
+                },
+                tasks: ['less']
             }
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-uglify-es');
     grunt.loadNpmTasks('assemble-less');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-contrib-uglify-es');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['browserSync', 'watch']);
 };

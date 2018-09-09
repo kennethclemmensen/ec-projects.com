@@ -1,11 +1,15 @@
 {
-	"name": "ec-projects",
-	"version": "1.0.0",
-	"devDependencies": {
-		"grunt": "*",
-		"grunt-contrib-watch": "*",
-		"grunt-contrib-uglify-es": "*",
-		"assemble-less": "*",
-		"grunt-browser-sync": "*"
-	}
+  "name": "ec-projects",
+  "version": "1.0.0",
+  "cssFolderPath": "public/themes/ec-projects/css/",
+  "lessFolderPath": "public/themes/ec-projects/less/",
+  "jsFolderPath": "public/themes/ec-projects/js/",
+  "themeFolderPath": "public/themes/ec-projects/",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-uglify-es": "*",
+    "assemble-less": "*",
+    "grunt-browser-sync": "*"
+  }
 }
