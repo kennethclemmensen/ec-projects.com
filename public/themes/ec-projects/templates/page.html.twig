@@ -86,7 +86,15 @@
     </div>
 </nav>
 <main class="page">
-    <div class="page__banner"></div>
+    {#<div class="page__banner"></div>#}
+    <div class="slider">
+        <div id="slider">
+            {% for i in 0..10 %}
+                <div class="slider__slide"></div>
+            {% endfor %}
+        </div>
+        <div class="slider__arrows"></div>
+    </div>
     <div class="page__container">
         {% if is_front %}
             {{ page.content }}
