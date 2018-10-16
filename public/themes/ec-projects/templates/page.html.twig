@@ -54,27 +54,38 @@
             <span class="header__nav-icon"></span>
         </a>
         <div class="header__menu">
-            {{ page.menu }}
+            {% if page.menu %}
+                {{ page.menu }}
+            {% endif %}
         </div>
         <div class="header__some">
-            {{ page.some }}
+            {% if page.some %}
+                {{ page.some }}
+            {% endif %}
         </div>
     </div>
 </header>
+{{ dump(nodes) }}
 <nav class="mobile-navigation">
     <div class="mobile-navigation__container">
-        {{ page.menu }}
+        {% if page.menu %}
+            {{ page.menu }}
+        {% endif %}
     </div>
     <div class="mobile-navigation__footer">
-        {{ page.some }}
+        {% if page.some %}
+            {{ page.some }}
+        {% endif %}
     </div>
 </nav>
 <main class="page">
-    {#<div class="page__banner"></div>#}
     <div class="slider">
         <div id="slider">
             {% for i in 0..10 %}
-                <div class="slider__slide"></div>
+                <div class="slider__slide">
+                    <div class="slider__slide-image"
+                         style="background-image: url('https://via.placeholder.com/1920x500')"></div>
+                </div>
             {% endfor %}
         </div>
         <div class="slider__arrows"></div>

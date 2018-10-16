@@ -7,9 +7,9 @@
   "themeFolderPath": "public/themes/ec-projects/",
   "devDependencies": {
     "grunt": "*",
-    "grunt-contrib-watch": "*",
+    "grunt-browser-sync": "*",
+    "grunt-contrib-less": "*",
     "grunt-contrib-uglify-es": "*",
-    "assemble-less": "*",
-    "grunt-browser-sync": "*"
+    "grunt-contrib-watch": "*"
   }
 }

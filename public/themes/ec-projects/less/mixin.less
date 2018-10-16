@@ -3,13 +3,13 @@
 }
 
 .box-shadow(@x; @y; @blur; @color) {
-  box-shadow: @arguments;
+  box-shadow+: @arguments;
 }
 
 .transition(@properties: all; @duration: .4s; @timing-function: ease; @delay: 0s) {
-  transition: @arguments;
+  transition+: @arguments;
 }
 
 .translateX(@value) {
-  transform: translateX(@value);
+  transform+_: translateX(@value);
 }

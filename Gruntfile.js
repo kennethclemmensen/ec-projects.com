@@ -59,8 +59,8 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('assemble-less');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify-es');
     grunt.loadNpmTasks('grunt-contrib-watch');
 

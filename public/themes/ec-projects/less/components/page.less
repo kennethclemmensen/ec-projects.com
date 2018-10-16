@@ -37,5 +37,23 @@
   }
   ul {
     margin-left: 20px;
+    list-style: none;
+    li {
+      display: block;
+      margin-bottom: 10px;
+      text-indent: -23px;
+      .transition();
+      &:hover {
+        background: darken(@color-gray, 20%);
+      }
+      &::before {
+        .font-awesome-solid;
+        content: '\f054';
+        margin-right: 10px;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
   }
 }
