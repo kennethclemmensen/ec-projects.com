@@ -1,5 +1,12 @@
 <?php
-function ec_projects_preprocess_page(array &$variables) {
+function ec_projects_preprocess_page(array &$variables) : void {
     $config = \Drupal::config('system.site');
     $variables['site_name'] = $config->get('name');
+    $nodeIds = \Drupal::entityQuery('node')->condition('type', 'slide')->execute();
+    $nodes = \Drupal\node\Entity\Node::loadMultiple($nodeIds);
+    $slides = [];
+    foreach($nodes as $node) {
+        $slides[] = file_create_url($node->field_image->entity->getFileUri());
+    }
+    $variables['slides'] = $slides;
 }

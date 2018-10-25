@@ -81,10 +81,9 @@
 <main class="page">
     <div class="slider">
         <div id="slider">
-            {% for i in 0..10 %}
+            {% for slide in slides %}
                 <div class="slider__slide">
-                    <div class="slider__slide-image"
-                         style="background-image: url('https://via.placeholder.com/1920x500')"></div>
+                    <div class="slider__slide-image" style="background-image: url({{ slide }})"></div>
                 </div>
             {% endfor %}
         </div>
