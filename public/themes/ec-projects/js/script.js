@@ -21,8 +21,8 @@ jQuery.noConflict();
                 }
             }]
         });
-        var $header = $('.header');
-        var headerScrollClass = 'header--scroll';
+        let $header = $('.header');
+        let headerScrollClass = 'header--scroll';
         $(window).scroll(function() {
             if(window.pageYOffset > 0) {
                 $header.addClass(headerScrollClass);
