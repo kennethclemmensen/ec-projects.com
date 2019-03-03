@@ -9,7 +9,7 @@
   left: 0;
   right: 0;
   z-index: 1;
-  .transition();
+  transition: all .4s ease 0s;
   @media @desktop {
     height: @header-height-desktop;
     border-bottom: none;
@@ -89,7 +89,7 @@
           width: 0;
           content: '';
           height: 2px;
-          .transition();
+          transition: all .4s ease 0s;
         }
         &:hover::after, &.is-active::after {
           width: 100%;

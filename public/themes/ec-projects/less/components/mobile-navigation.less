@@ -6,13 +6,13 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-  .transition();
-  .translateX(-100%);
+  transition: all .4s ease 0s;
+  transform: translateX(-100%);
   @media @desktop {
     display: none;
   }
   &--active {
-    .translateX(0);
+    transform: translateX(0);
   }
 }
 
