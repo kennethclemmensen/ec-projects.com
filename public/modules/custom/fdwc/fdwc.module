@@ -1,0 +1,16 @@
+<?php
+/**
+ * Implements hook_theme()
+ */
+function fdwc_theme() : array {
+    return [
+        'fdwc_file_download' => [
+            'variables' => ['url' => null, 'fileName' => null],
+            'template' => 'fdwc-file-download'
+        ],
+        'fdwc_file_download_counter' => [
+            'variables' => ['counter' => null],
+            'template' => 'fdwc-file-download-counter'
+        ]
+    ];
+}

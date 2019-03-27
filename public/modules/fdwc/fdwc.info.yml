@@ -1,7 +1,0 @@
-name: File Download With Counter
-description: Provide an option to download a file and count the number of downloads
-package: File Download
-type: module
-core: 8.x
-dependencies:
-    - drupal:file
