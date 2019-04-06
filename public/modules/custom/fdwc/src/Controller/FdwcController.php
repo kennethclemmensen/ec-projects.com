@@ -4,6 +4,7 @@ namespace Drupal\fdwc\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Entity\EntityStorageException;
 use Drupal\node\Entity\Node;
+use mysql_xdevapi\Exception;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -23,7 +24,7 @@ class FdwcController extends ControllerBase {
      */
     public function download(File $file) : BinaryFileResponse {
         if(!is_null($file)) {
-            $this->updateCounterField();
+            $this->updateCounterField($file);
             $response = new BinaryFileResponse($file->getFileUri());
             $response->trustXSendfileTypeHeader();
             $response->setContentDisposition(ResponseHeaderBag::DISPOSITION_ATTACHMENT, $file->getFilename());
@@ -34,10 +35,15 @@ class FdwcController extends ControllerBase {
     }
 
     /**
-     * Update the counter field
+     * Update the counter field when downloading the file
+     *
+     * @param File $file the file to download
      */
-    private function updateCounterField() : void {
-        $nodeId = 31;
+    private function updateCounterField(File $file) : void {
+        $info = file_get_file_references($file);
+        $fieldName = key($info);
+        $entityType = key($info[$fieldName]);
+        $nodeId = key($info[$fieldName][$entityType]);
         $node = Node::load($nodeId);
         if($node !== null) {
             $fieldName = 'field_download_counter';
