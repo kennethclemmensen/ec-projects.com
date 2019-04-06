@@ -37,8 +37,6 @@ class FdwcController extends ControllerBase {
      * Update the counter field
      */
     private function updateCounterField() : void {
-        //$node = \Drupal::routeMatch()->getParameter('node');
-        //$nodeId = $node->id();
         $nodeId = 31;
         $node = Node::load($nodeId);
         if($node !== null) {

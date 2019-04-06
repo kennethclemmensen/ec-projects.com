@@ -5,7 +5,7 @@ use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Field\FieldItemListInterface;
 
 /**
- * Plugin implementation of the fdwc file download counter formatter.
+ * Plugin implementation of the File Download Counter formatter
  *
  * @FieldFormatter (
  *   id = "fdwc_file_download_counter_formatter",
@@ -18,15 +18,11 @@ use Drupal\Core\Field\FieldItemListInterface;
 class FdwcFileDownloadCounterFormatter extends FormatterBase {
 
     /**
-     *
-     *
-     * @param FieldItemListInterface $items
-     * @param string $langcode
-     * @return array
+     * {@inheritdoc}
      */
     public function viewElements(FieldItemListInterface $items, $langcode) : array {
         $elements = [];
-        foreach($this->getEntitiesToView($items, $langcode) as $item) {
+        foreach($items as $item) {
             $elements[] = [
                 '#theme' => 'fdwc_file_download_counter',
                 '#counter' => $item->value,

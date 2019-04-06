@@ -5,7 +5,7 @@ use Drupal\file\Plugin\Field\FieldFormatter\FileFormatterBase;
 use Drupal\Core\Field\FieldItemListInterface;
 
 /**
- * Plugin implementation of the fdwc_file_download formatter.
+ * Plugin implementation of the File Download formatter
  *
  * @FieldFormatter(
  *  id = "fdwc_file_download",
@@ -18,11 +18,7 @@ use Drupal\Core\Field\FieldItemListInterface;
 class FdwcFileDownloadFormatter extends FileFormatterBase {
 
     /**
-     *
-     *
-     * @param FieldItemListInterface $items
-     * @param string $langcode
-     * @return array
+     * {@inheritdoc}
      */
     public function viewElements(FieldItemListInterface $items, $langcode) : array {
         $elements = [];

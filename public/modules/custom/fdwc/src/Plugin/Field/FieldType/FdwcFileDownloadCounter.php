@@ -8,7 +8,7 @@ use Drupal\Core\TypedData\DataDefinition;
 use Drupal\Core\TypedData\Exception\MissingDataException;
 
 /**
- * Plugin implementation of the fdwc download counter field type.
+ * Plugin implementation of the Download Counter field
  *
  * @FieldType(
  *   id = "fdwc_file_download_counter",
@@ -16,16 +16,13 @@ use Drupal\Core\TypedData\Exception\MissingDataException;
  *   module = "fdwc",
  *   description = @Translation("Count the number of downloads."),
  *   default_formatter = "fdwc_file_download_counter_formatter",
- *   default_widget = "number"
+ *   default_widget = "fdwc_file_download_counter_widget"
  * )
  */
 class FdwcFileDownloadCounter extends FieldItemBase implements FieldItemInterface {
 
     /**
-     *
-     *
-     * @param FieldStorageDefinitionInterface $fieldDefinition
-     * @return array
+     * {@inheritdoc}
      */
     public static function propertyDefinitions(FieldStorageDefinitionInterface $fieldDefinition) : array {
         $properties['value'] = DataDefinition::create('integer')->setLabel('Download counter');
@@ -33,9 +30,7 @@ class FdwcFileDownloadCounter extends FieldItemBase implements FieldItemInterfac
     }
 
     /**
-     *
-     *
-     * @return bool
+     * {@inheritdoc}
      */
     public function isEmpty() : bool {
         try {
@@ -47,12 +42,9 @@ class FdwcFileDownloadCounter extends FieldItemBase implements FieldItemInterfac
     }
 
     /**
-     *
-     *
-     * @param FieldStorageDefinitionInterface $field_definition
-     * @return array
+     * {@inheritdoc}
      */
-    public static function schema(FieldStorageDefinitionInterface $field_definition) {
+    public static function schema(FieldStorageDefinitionInterface $fieldDefinition) : array {
         return [
             'columns' => [
                 'value' => [
