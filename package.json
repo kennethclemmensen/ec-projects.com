@@ -1,10 +1,10 @@
 {
   "name": "ec-projects",
   "version": "1.0.0",
-  "cssFolderPath": "public/themes/ec-projects/css/",
-  "lessFolderPath": "public/themes/ec-projects/less/",
-  "jsFolderPath": "public/themes/ec-projects/js/",
-  "themeFolderPath": "public/themes/ec-projects/",
+  "cssFolderPath": "public/themes/custom/ec-projects/css/",
+  "lessFolderPath": "public/themes/custom/ec-projects/less/",
+  "jsFolderPath": "public/themes/custom/ec-projects/js/",
+  "themeFolderPath": "public/themes/custom/ec-projects/",
   "devDependencies": {
     "grunt": "*",
     "grunt-browser-sync": "*",
