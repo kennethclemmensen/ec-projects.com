@@ -1,5 +1,4 @@
 <?php
-use \Drupal;
 use \Drupal\node\Entity\Node;
 
 function ec_projects_preprocess_page(array &$variables) : void {
