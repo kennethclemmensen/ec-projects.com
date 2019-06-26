@@ -6,10 +6,10 @@
   "jsFolderPath": "public/themes/custom/ec-projects/js/",
   "themeFolderPath": "public/themes/custom/ec-projects/",
   "devDependencies": {
-    "grunt": "*",
-    "grunt-browser-sync": "*",
-    "grunt-contrib-less": "*",
-    "grunt-contrib-uglify-es": "*",
-    "grunt-contrib-watch": "*"
+    "grunt": "^1.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0"
   }
 }
