@@ -1,7 +1,7 @@
 jQuery.noConflict();
 (function($) {
-    $(document).ready(function() {
-        $('.header__nav-trigger').on('click', function(event) {
+    $.when($.ready).then(() => {
+        $('.header__nav-trigger').on('click', (event) => {
             event.preventDefault();
             $('html, body').toggleClass('show-mobile-navigation');
             $('.mobile-navigation').toggleClass('mobile-navigation--active');
@@ -23,12 +23,8 @@ jQuery.noConflict();
         });
         let $header = $('.header');
         let headerScrollClass = 'header--scroll';
-        $(window).scroll(function() {
-            if(window.pageYOffset > 0) {
-                $header.addClass(headerScrollClass);
-            } else {
-                $header.removeClass(headerScrollClass);
-            }
+        $(window).scroll(() => {
+            (window.pageYOffset > 0) ? $header.addClass(headerScrollClass) : $header.removeClass(headerScrollClass);
         });
     });
 })(jQuery);
