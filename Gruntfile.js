@@ -3,6 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        //Setup the browserSync task to synchronize browsers on different devices
         browserSync: {
             bsFiles: {
                 src: '<%= pkg.cssFolderPath %>/*.css'
@@ -20,6 +21,7 @@ module.exports = function(grunt) {
                 watchTask: true
             }
         },
+        //Translate less to css
         less: {
             development: {
                 files: {
@@ -31,6 +33,7 @@ module.exports = function(grunt) {
                 }
             }
         },
+        //Uglify the JavaScript files
         uglify: {
             my_target: {
                 files: {
@@ -38,6 +41,7 @@ module.exports = function(grunt) {
                 }
             }
         },
+        //Setup the watch task to look for changes in files
         watch: {
             options: {
                 livereload: true
@@ -59,10 +63,12 @@ module.exports = function(grunt) {
         }
     });
 
+    //Load all tasks
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify-es');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
+    //Register the default tasks
     grunt.registerTask('default', ['browserSync', 'watch']);
 };
