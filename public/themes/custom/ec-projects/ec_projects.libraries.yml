@@ -1,8 +1,8 @@
 font-awesome:
-  version: 5.10.0
+  version: 5.10.1
   css:
     theme:
-      https://use.fontawesome.com/releases/v5.10.0/css/all.css: { type: external, minified: true }
+      https://use.fontawesome.com/releases/v5.10.1/css/all.css: { type: external, minified: true }
 
 global-styling:
   version: 1.0
