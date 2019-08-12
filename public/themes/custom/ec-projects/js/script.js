@@ -1,6 +1,6 @@
 jQuery.noConflict();
 (function($) {
-    $.when($.ready).then(() => {
+    $(() => {
         $('.header__nav-trigger').on('click', (event) => {
             event.preventDefault();
             $('html, body').toggleClass('show-mobile-navigation');
