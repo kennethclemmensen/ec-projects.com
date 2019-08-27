@@ -34,8 +34,8 @@ module.exports = function(grunt) {
             }
         },
         //Uglify the JavaScript files
-        uglify: {
-            my_target: {
+        terser: {
+            your_target: {
                 files: {
                     '<%= pkg.jsFolderPath %>minified/script.min.js': ['<%= pkg.jsFolderPath %>*.js']
                 }
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false
                 },
-                tasks: ['uglify']
+                tasks: ['terser']
             },
             styles: {
                 files: ['<%= pkg.lessFolderPath %>**/*.less'],
@@ -66,8 +66,8 @@ module.exports = function(grunt) {
     //Load all tasks
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-uglify-es');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-terser');
 
     //Register the default tasks
     grunt.registerTask('default', ['browserSync', 'watch']);
