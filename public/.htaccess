@@ -70,7 +70,7 @@ AddEncoding gzip svgz
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
-  
+
   #Redirect to HTTPS
   #RewriteCond %{HTTPS} off
   #RewriteCond %{HTTP:X-Forwarded-Proto} !https
