@@ -6,14 +6,14 @@ module.exports = function(grunt) {
         //Setup the browserSync task to synchronize browsers on different devices
         browserSync: {
             bsFiles: {
-                src: '<%= pkg.cssFolderPath %>/*.css'
+                src: '<%= pkg.config.cssFolderPath %>/*.css'
             },
             options: {
                 debugInfo: true,
                 files: [
-                    '<%= pkg.cssFolderPath %>*.css',
-                    '<%= pkg.themeFolderPath %>**/*.php',
-                    '<%= pkg.jsFolderPath %>*.js'
+                    '<%= pkg.config.cssFolderPath %>*.css',
+                    '<%= pkg.config.themeFolderPath %>**/*.php',
+                    '<%= pkg.config.jsFolderPath %>*.js'
                 ],
                 logConnections: true,
                 notify: true,
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         less: {
             development: {
                 files: {
-                    '<%= pkg.cssFolderPath %>style.css': '<%= pkg.lessFolderPath %>style.less'
+                    '<%= pkg.config.cssFolderPath %>style.css': '<%= pkg.config.lessFolderPath %>style.less'
                 },
                 options: {
                     compress: true,
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         terser: {
             your_target: {
                 files: {
-                    '<%= pkg.jsFolderPath %>minified/script.min.js': ['<%= pkg.jsFolderPath %>*.js']
+                    '<%= pkg.config.jsFolderPath %>minified/script.min.js': ['<%= pkg.config.jsFolderPath %>*.js']
                 }
             }
         },
@@ -47,14 +47,14 @@ module.exports = function(grunt) {
                 livereload: true
             },
             scripts: {
-                files: ['<%= pkg.jsFolderPath %>**/*.js'],
+                files: ['<%= pkg.config.jsFolderPath %>**/*.js'],
                 options: {
                     spawn: false
                 },
                 tasks: ['terser']
             },
             styles: {
-                files: ['<%= pkg.lessFolderPath %>**/*.less'],
+                files: ['<%= pkg.config.lessFolderPath %>**/*.less'],
                 options: {
                     spawn: false
                 },
