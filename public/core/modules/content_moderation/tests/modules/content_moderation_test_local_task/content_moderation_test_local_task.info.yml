@@ -3,12 +3,11 @@ type: module
 description: 'Provides a local task for testing.'
 package: Testing
 # version: VERSION
-core: 8.x
 dependencies:
   - drupal:content_moderation
   - drupal:node
 
-# Information added by Drupal.org packaging script on 2020-05-20
-version: '8.8.6'
+# Information added by Drupal.org packaging script on 2020-06-03
+version: '9.0.0'
 project: 'drupal'
-datestamp: 1589989103
+datestamp: 1591221734
