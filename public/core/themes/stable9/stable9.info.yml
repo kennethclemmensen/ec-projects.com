@@ -321,7 +321,7 @@ libraries-override:
         css/views_ui.admin.theme.css: css/views_ui/views_ui.admin.theme.css
         css/views_ui.contextual.css: css/views_ui/views_ui.contextual.css
 
-# Information added by Drupal.org packaging script on 2020-06-17
-version: '9.0.1'
+# Information added by Drupal.org packaging script on 2020-07-08
+version: '9.0.2'
 project: 'drupal'
-datestamp: 1592417762
+datestamp: 1594237482
