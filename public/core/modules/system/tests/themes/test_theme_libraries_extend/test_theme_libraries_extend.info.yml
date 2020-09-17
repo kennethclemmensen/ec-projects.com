@@ -13,7 +13,7 @@ libraries-extend:
     - not_a_string:
         expected: 'an exception'
 
-# Information added by Drupal.org packaging script on 2020-09-03
-version: '9.0.5'
+# Information added by Drupal.org packaging script on 2020-09-16
+version: '9.0.6'
 project: 'drupal'
-datestamp: 1599167794
+datestamp: 1600275880
