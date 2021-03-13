@@ -33,6 +33,12 @@ module.exports = function(grunt) {
                 }
             }
         },
+        //Use the grunt-shell plugin to run a npm command
+        shell: {
+            npm_run_tsc: {
+                command: '<%= pkg.config.npmTscCommand %>'
+            }
+        },
         //Uglify the JavaScript files
         terser: {
             your_target: {
@@ -59,6 +65,13 @@ module.exports = function(grunt) {
                     spawn: false
                 },
                 tasks: ['less']
+            },
+            ts: {
+                files: ['<%= pkg.config.tsFolderPath %>**/*.ts'],
+                options: {
+                    spawn: false
+                },
+                tasks: ['shell:npm_run_tsc']
             }
         }
     });
@@ -67,6 +80,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-terser');
 
     //Register the default tasks

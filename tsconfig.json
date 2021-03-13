@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "allowUnreachableCode": false,
+      "forceConsistentCasingInFileNames": true,
+      "noEmitOnError": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitReturns": true,
+      "noUncheckedIndexedAccess": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "outFile": "./public/themes/custom/ec-projects/js/script.js",
+      "strict": true,
+      "target": "ES2019",
+      "types": [
+          "jquery"
+      ]
+    },
+    "include": [
+      "./public/themes/custom/ec-projects/ts/**/*.ts"
+    ]
+  }
