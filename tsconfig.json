@@ -4,6 +4,7 @@
       "forceConsistentCasingInFileNames": true,
       "noEmitOnError": true,
       "noFallthroughCasesInSwitch": true,
+      "noImplicitOverride": true,
       "noImplicitReturns": true,
       "noUncheckedIndexedAccess": true,
       "noUnusedLocals": true,
