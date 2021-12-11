@@ -11,7 +11,7 @@
     "tsFolderPath": "public/themes/custom/ec-projects/ts/"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.9",
+    "@types/jquery": "^3.5.10",
     "grunt": "^1.4.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.4.3",
@@ -19,7 +19,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-shell": "^3.0.1",
     "grunt-terser": "^2.0.0",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.3"
   },
   "scripts": {
     "grunt": "grunt",
