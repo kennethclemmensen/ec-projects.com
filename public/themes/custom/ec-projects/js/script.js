@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }]
     });
-    let $header = $('.header');
-    let headerScrollClass = 'header--scroll';
+    const header = $('.header');
+    const headerScrollClass = 'header--scroll';
     $(window).on('scroll', () => {
-        (window.pageYOffset > 0) ? $header.addClass(headerScrollClass) : $header.removeClass(headerScrollClass);
+        (window.pageYOffset > 0) ? header.addClass(headerScrollClass) : header.removeClass(headerScrollClass);
     });
 });
