@@ -518,17 +518,17 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.3.7",
-            "version_normalized": "9.3.7.0",
+            "version": "9.3.8",
+            "version_normalized": "9.3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a768174b00fa088027d460a80a13550e624b9bf8"
+                "reference": "e8e3b7e5b3353f7ebf24de9d39087df75bd66afe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a768174b00fa088027d460a80a13550e624b9bf8",
-                "reference": "a768174b00fa088027d460a80a13550e624b9bf8",
+                "url": "https://api.github.com/repos/drupal/core/zipball/e8e3b7e5b3353f7ebf24de9d39087df75bd66afe",
+                "reference": "e8e3b7e5b3353f7ebf24de9d39087df75bd66afe",
                 "shasum": ""
             },
             "require": {
@@ -781,8 +781,8 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.3.7",
-            "version_normalized": "9.3.7.0",
+            "version": "9.3.8",
+            "version_normalized": "9.3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -829,8 +829,8 @@
         },
         {
             "name": "drupal/core-project-message",
-            "version": "9.3.7",
-            "version_normalized": "9.3.7.0",
+            "version": "9.3.8",
+            "version_normalized": "9.3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -868,17 +868,17 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.3.7",
-            "version_normalized": "9.3.7.0",
+            "version": "9.3.8",
+            "version_normalized": "9.3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "29f6f29672861a5719701a59aae26aafbb4c9495"
+                "reference": "98048032809157c723131ecc2394ff55421d5dc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/29f6f29672861a5719701a59aae26aafbb4c9495",
-                "reference": "29f6f29672861a5719701a59aae26aafbb4c9495",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/98048032809157c723131ecc2394ff55421d5dc6",
+                "reference": "98048032809157c723131ecc2394ff55421d5dc6",
                 "shasum": ""
             },
             "require": {
@@ -887,7 +887,7 @@
                 "doctrine/annotations": "1.13.2",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.3.7",
+                "drupal/core": "9.3.8",
                 "egulias/email-validator": "3.1.2",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.5.1",
@@ -951,8 +951,8 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "9.3.7",
-            "version_normalized": "9.3.7.0",
+            "version": "9.3.8",
+            "version_normalized": "9.3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -3595,8 +3595,8 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.24.0",
-            "version_normalized": "1.24.0.0",
+            "version": "v1.25.0",
+            "version_normalized": "1.25.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -3671,8 +3671,8 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.24.0",
-            "version_normalized": "1.24.0.0",
+            "version": "v1.25.0",
+            "version_normalized": "1.25.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
