@@ -3,7 +3,7 @@ base theme: stable
 name: 'Test theme with a too long name'
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2022-03-21
-version: '9.3.9'
+# Information added by Drupal.org packaging script on 2022-04-14
+version: '9.3.11'
 project: 'drupal'
-datestamp: 1647899432
+datestamp: 1649897478
