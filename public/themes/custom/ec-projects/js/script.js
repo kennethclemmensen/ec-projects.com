@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
         $('html, body').toggleClass('show-mobile-navigation');
         $('.mobile-navigation').toggleClass('mobile-navigation--active');
     });
-    //@ts-ignore
     $('#slider').slick({
         arrows: false,
         autoplay: true,
