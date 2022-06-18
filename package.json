@@ -19,7 +19,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-shell": "^4.0.0",
     "grunt-terser": "^2.0.0",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "grunt": "grunt",
