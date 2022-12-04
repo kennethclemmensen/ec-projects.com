@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     $('.header__nav-trigger').on('click', (event) => {
         event.preventDefault();
-        $('html, body').toggleClass('show-mobile-navigation');
-        $('.mobile-navigation').toggleClass('mobile-navigation--active');
+        $('html, body').toggleClass('show-mobile-menu');
+        $('.mobile-menu').toggleClass('mobile-menu--active');
     });
     ($('#slider') as any).slick({
         arrows: false,
