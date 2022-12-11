@@ -4,7 +4,6 @@ namespace Drupal\fdwc\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Entity\EntityStorageException;
 use Drupal\node\Entity\Node;
-use mysql_xdevapi\Exception;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
