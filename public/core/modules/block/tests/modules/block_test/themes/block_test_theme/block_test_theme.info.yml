@@ -1,6 +1,6 @@
 name: 'Block test theme'
 type: theme
-base theme: stable
+base theme: stable9
 description: 'Theme for testing the block system'
 # version: VERSION
 regions:
@@ -15,7 +15,7 @@ regions_hidden:
   - sidebar_first
   - sidebar_second
 
-# Information added by Drupal.org packaging script on 2022-12-07
-version: '9.4.9'
+# Information added by Drupal.org packaging script on 2022-12-15
+version: '9.5.0'
 project: 'drupal'
-datestamp: 1670421160
+datestamp: 1671115927
