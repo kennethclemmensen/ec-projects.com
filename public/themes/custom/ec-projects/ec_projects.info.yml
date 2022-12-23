@@ -1,12 +1,12 @@
 name: EC Projects
 type: theme
-core_version_requirement: 9.x
+core_version_requirement: 10.x
 libraries:
   - ec_projects/font-awesome
   - ec_projects/jquery
   - ec_projects/slick-slider
   - ec_projects/global-styling
-base theme: classy
+base theme: claro
 regions:
   some: 'SoMe'
   menu: 'Menu'
