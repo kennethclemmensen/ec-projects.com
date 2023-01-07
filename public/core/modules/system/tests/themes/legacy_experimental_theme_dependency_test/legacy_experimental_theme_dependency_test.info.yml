@@ -4,7 +4,7 @@ description: 'Legacy experimental dependency test theme.'
 # version: VERSION
 base theme: legacy_experimental_theme_test
 
-# Information added by Drupal.org packaging script on 2022-12-15
-version: '10.0.0'
+# Information added by Drupal.org packaging script on 2023-01-04
+version: '10.0.1'
 project: 'drupal'
-datestamp: 1671126001
+datestamp: 1672847845
