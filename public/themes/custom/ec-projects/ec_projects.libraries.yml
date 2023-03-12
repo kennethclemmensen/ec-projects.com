@@ -13,9 +13,9 @@ global-styling:
     js/minified/script.min.js: {}
 
 jquery:
-  version: 3.6.3
+  version: 3.6.4
   js:
-    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js: { type: external, minified: true }
+    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js: { type: external, minified: true }
 
 slick-slider:
   version: 1.9.0
