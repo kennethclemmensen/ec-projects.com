@@ -4,7 +4,7 @@ description: 'Polyfills the event.which property, needed for tests'
 package: Testing
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2023-03-01
-version: '10.0.4'
+# Information added by Drupal.org packaging script on 2023-03-15
+version: '10.0.5'
 project: 'drupal'
-datestamp: 1677681567
+datestamp: 1678901143
