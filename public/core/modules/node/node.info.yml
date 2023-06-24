@@ -1,13 +1,13 @@
 name: Node
 type: module
-description: 'Allows content to be submitted to the site and displayed on pages.'
+description: 'Manages the creation, configuration, and display of the main site content.'
 package: Core
 # version: VERSION
 configure: entity.node_type.collection
 dependencies:
   - drupal:text
 
-# Information added by Drupal.org packaging script on 2023-05-03
-version: '10.0.9'
+# Information added by Drupal.org packaging script on 2023-06-22
+version: '10.1.0'
 project: 'drupal'
-datestamp: 1683108678
+datestamp: 1687424349

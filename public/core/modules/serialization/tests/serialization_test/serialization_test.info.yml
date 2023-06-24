@@ -4,7 +4,7 @@ description: "Support module for serialization tests."
 package: Testing
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2023-05-03
-version: '10.0.9'
+# Information added by Drupal.org packaging script on 2023-06-22
+version: '10.1.0'
 project: 'drupal'
-datestamp: 1683108678
+datestamp: 1687424349
