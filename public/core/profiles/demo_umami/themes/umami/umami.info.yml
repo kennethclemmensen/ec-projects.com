@@ -7,6 +7,8 @@ libraries:
   - umami/classy.base
   - core/normalize
   - umami/global
+dependencies:
+  - drupal:sdc
 
 libraries-override:
   layout_builder/twocol_section:
@@ -66,7 +68,7 @@ regions:
   page_top: 'Page top' # Needed by Drupal Core
   page_bottom: 'Page bottom' # Needed by Drupal Core
 
-# Information added by Drupal.org packaging script on 2023-08-02
-version: '10.1.2'
+# Information added by Drupal.org packaging script on 2023-09-07
+version: '10.1.3'
 project: 'drupal'
-datestamp: 1690972232
+datestamp: 1694101130

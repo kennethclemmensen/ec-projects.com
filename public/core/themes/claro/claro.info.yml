@@ -109,7 +109,6 @@ libraries-extend:
     - claro/details-focus
   core/drupal.dialog:
     - claro/claro.drupal.dialog
-    - claro/claro.jquery.ui
   core/drupal.dropbutton:
     - claro/dropbutton
   core/drupal.checkbox:
@@ -119,7 +118,7 @@ libraries-extend:
   core/drupal.progress:
     - claro/progress
   core/drupal.tabbingmanager:
-    - claro/claro.jquery.ui
+    - claro/tabbingmanager
   core/drupal.tabledrag:
     - claro/claro.tabledrag
   core/drupal.tableselect:
@@ -136,7 +135,6 @@ libraries-extend:
     - claro/system.admin
   core/drupal.autocomplete:
     - claro/autocomplete
-    - claro/claro.jquery.ui
   tour/tour-styling:
     - claro/tour-styling
   shortcut/drupal.shortcut:
@@ -169,7 +167,7 @@ regions:
 regions_hidden:
   - sidebar_first
 
-# Information added by Drupal.org packaging script on 2023-08-02
-version: '10.1.2'
+# Information added by Drupal.org packaging script on 2023-09-07
+version: '10.1.3'
 project: 'drupal'
-datestamp: 1690972232
+datestamp: 1694101130
