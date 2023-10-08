@@ -47,12 +47,7 @@ libraries-override:
       component:
         misc/vertical-tabs.css: false
 
-  core/drupal.autocomplete:
-    css:
-      theme:
-        assets/vendor/jquery.ui/themes/base/theme.css: false
-
-  core/drupal.tabbingmanager:
+  core/internal.jquery_ui:
     css:
       theme:
         assets/vendor/jquery.ui/themes/base/theme.css: false
@@ -61,8 +56,6 @@ libraries-override:
     css:
       component:
         assets/vendor/jquery.ui/themes/base/dialog.css: false
-      theme:
-        assets/vendor/jquery.ui/themes/base/theme.css: false
 
   user/drupal.user:
     css:
@@ -167,7 +160,7 @@ regions:
 regions_hidden:
   - sidebar_first
 
-# Information added by Drupal.org packaging script on 2023-09-20
-version: '10.1.4'
+# Information added by Drupal.org packaging script on 2023-10-04
+version: '10.1.5'
 project: 'drupal'
-datestamp: 1695227344
+datestamp: 1696456438
