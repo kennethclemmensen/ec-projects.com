@@ -296,12 +296,16 @@ libraries-override:
       theme:
         css/views_ui.admin.theme.css: css/views_ui/views_ui.admin.theme.css
         css/views_ui.contextual.css: css/views_ui/views_ui.contextual.css
+  field_ui/drupal.field_ui_table:
+    css:
+      theme:
+        css/field_ui_display_mode_table.css: css/field_ui/field_ui_display_mode_table.css
 
 libraries-extend:
   tour/tour:
     - stable9/tour
 
-# Information added by Drupal.org packaging script on 2023-12-06
-version: '10.1.7'
+# Information added by Drupal.org packaging script on 2023-12-15
+version: '10.2.0'
 project: 'drupal'
-datestamp: 1701857829
+datestamp: 1702681766
