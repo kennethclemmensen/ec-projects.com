@@ -9,7 +9,7 @@ dependencies:
   - drupal:user
 configure: entity.block_content.collection
 
-# Information added by Drupal.org packaging script on 2024-01-05
-version: '10.2.1'
+# Information added by Drupal.org packaging script on 2024-01-17
+version: '10.2.2'
 project: 'drupal'
-datestamp: 1704448245
+datestamp: 1705511905
