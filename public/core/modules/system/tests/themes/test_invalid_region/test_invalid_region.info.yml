@@ -6,7 +6,7 @@ description: 'Test theme which has a non-existent content region.'
 regions:
   - foo: Foo
 
-# Information added by Drupal.org packaging script on 2024-02-07
-version: '10.2.3'
+# Information added by Drupal.org packaging script on 2024-03-06
+version: '10.2.4'
 project: 'drupal'
-datestamp: 1707347743
+datestamp: 1709715468

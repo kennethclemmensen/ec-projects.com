@@ -4,7 +4,7 @@ base theme: test_theme_twig_registry_loader
 description: 'Support module for Twig registry loader testing.'
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2024-02-07
-version: '10.2.3'
+# Information added by Drupal.org packaging script on 2024-03-06
+version: '10.2.4'
 project: 'drupal'
-datestamp: 1707347743
+datestamp: 1709715468
