@@ -350,10 +350,6 @@ class ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472
         ),
     );
 
-    public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/..' . '/pear/pear-core-minimal/src',
-    );
-
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -388,7 +384,11 @@ class ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472
         'Drupal\\Core\\Installer\\InstallerRedirectTrait' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Installer/InstallerRedirectTrait.php',
         'Drupal\\Core\\Site\\Settings' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Site/Settings.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
+        'OS_Guess' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/OS/Guess.php',
         'Override' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/Override.php',
+        'PEAR' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
+        'PEAR_Error' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
+        'PEAR_ErrorStack' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR/ErrorStack.php',
         'PEAR_Exception' => __DIR__ . '/..' . '/pear/pear_exception/PEAR/Exception.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'SebastianBergmann\\Diff\\Chunk' => __DIR__ . '/..' . '/sebastian/diff/src/Chunk.php',
@@ -408,6 +408,7 @@ class ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472
         'SebastianBergmann\\Diff\\Parser' => __DIR__ . '/..' . '/sebastian/diff/src/Parser.php',
         'SebastianBergmann\\Diff\\TimeEfficientLongestCommonSubsequenceCalculator' => __DIR__ . '/..' . '/sebastian/diff/src/TimeEfficientLongestCommonSubsequenceCalculator.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'System' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/System.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
@@ -418,7 +419,6 @@ class ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472
             $loader->prefixLengthsPsr4 = ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472::$fallbackDirsPsr0;
             $loader->classMap = ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472::$classMap;
 
         }, null, ClassLoader::class);
