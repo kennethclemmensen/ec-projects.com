@@ -12,7 +12,7 @@ install:
   - entity_test_install
   - testing_config_overrides_module
 
-# Information added by Drupal.org packaging script on 2024-05-01
-version: '10.2.6'
+# Information added by Drupal.org packaging script on 2024-06-06
+version: '10.2.7'
 project: 'drupal'
-datestamp: 1714597793
+datestamp: 1717660126
