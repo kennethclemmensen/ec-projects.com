@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472
+class ComposerStaticInit9240392502bc9cb6b8bf362457f91124
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -21,6 +21,10 @@ class ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+        '89efb1254ef2d1c5d80096acd12c4098' => __DIR__ . '/..' . '/twig/twig/src/Resources/core.php',
+        'ffecb95d45175fd40f75be8a23b34f90' => __DIR__ . '/..' . '/twig/twig/src/Resources/debug.php',
+        'c7baa00073ee9c61edf148c51917cfb4' => __DIR__ . '/..' . '/twig/twig/src/Resources/escaper.php',
+        'f844ccf1d25df8663951193c3fc307c8' => __DIR__ . '/..' . '/twig/twig/src/Resources/string_loader.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/core/includes/bootstrap.inc',
     );
 
@@ -363,6 +367,7 @@ class ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472
         'DateObjectError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateObjectError.php',
         'DateRangeError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateRangeError.php',
         'Drupal' => __DIR__ . '/../..' . '/core/lib/Drupal.php',
+        'Drupal\\Component\\Datetime\\Time' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/Datetime/Time.php',
         'Drupal\\Component\\DependencyInjection\\Container' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/DependencyInjection/Container.php',
         'Drupal\\Component\\DependencyInjection\\PhpArrayContainer' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php',
         'Drupal\\Component\\FileCache\\FileCacheFactory' => __DIR__ . '/../..' . '/core/lib/Drupal/Component/FileCache/FileCacheFactory.php',
@@ -391,6 +396,7 @@ class ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472
         'PEAR_ErrorStack' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR/ErrorStack.php',
         'PEAR_Exception' => __DIR__ . '/..' . '/pear/pear_exception/PEAR/Exception.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+        'SQLite3Exception' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/SQLite3Exception.php',
         'SebastianBergmann\\Diff\\Chunk' => __DIR__ . '/..' . '/sebastian/diff/src/Chunk.php',
         'SebastianBergmann\\Diff\\ConfigurationException' => __DIR__ . '/..' . '/sebastian/diff/src/Exception/ConfigurationException.php',
         'SebastianBergmann\\Diff\\Diff' => __DIR__ . '/..' . '/sebastian/diff/src/Diff.php',
@@ -416,10 +422,10 @@ class ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitacb35cb9188ed0c141d25c390a3f3472::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9240392502bc9cb6b8bf362457f91124::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9240392502bc9cb6b8bf362457f91124::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit9240392502bc9cb6b8bf362457f91124::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit9240392502bc9cb6b8bf362457f91124::$classMap;
 
         }, null, ClassLoader::class);
     }

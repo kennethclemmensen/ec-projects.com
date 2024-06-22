@@ -10,12 +10,18 @@ libraries-override:
     css:
       base:
         css/foo.css: css/bar.css
+  theme_test/moved_from:
+    css:
+      base:
+        css/foo.css: css/bar.css
+    js:
+      js/bar.js: false
 
 libraries-extend:
   theme_test/another_deprecated_library:
     - test_theme_with_deprecated_libraries/library
 
-# Information added by Drupal.org packaging script on 2024-06-06
-version: '10.2.7'
+# Information added by Drupal.org packaging script on 2024-06-20
+version: '10.3.0'
 project: 'drupal'
-datestamp: 1717660126
+datestamp: 1718911263
