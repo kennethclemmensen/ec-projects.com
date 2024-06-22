@@ -1,15 +1,14 @@
 #Visual Studio Code
-.vscode
+/.vscode
 
 #Node
-node_modules
+/node_modules
 
 #Database
-db
+/db
 
 #User files
-public/sites/default/files
-!public/sites/default/files/.htaccess
+/public/sites/default/files
 
 #Settings
-public/sites/default/settings.php
+/public/sites/default/settings.php
