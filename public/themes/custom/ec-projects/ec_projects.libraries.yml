@@ -8,9 +8,9 @@ global-styling:
   version: 1.0
   css:
     theme:
-      css/style.css: {}
+      dist/default.css: {}
   js:
-    js/minified/script.min.js: {}
+    dist/default.js: {}
 
 jquery:
   version: 3.7.1

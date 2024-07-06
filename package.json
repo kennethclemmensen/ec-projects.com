@@ -2,27 +2,18 @@
   "name": "ec-projects",
   "version": "1.0.0",
   "private": true,
-  "config": {
-    "cssFolderPath": "public/themes/custom/ec-projects/css/",
-    "lessFolderPath": "public/themes/custom/ec-projects/less/",
-    "jsFolderPath": "public/themes/custom/ec-projects/js/",
-    "npmTscCommand": "npm run tsc",
-    "themeFolderPath": "public/themes/custom/ec-projects/",
-    "tsFolderPath": "public/themes/custom/ec-projects/ts/"
-  },
+  "type": "module",
   "devDependencies": {
     "@types/jquery": "^3.5.30",
-    "grunt": "^1.6.1",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-cli": "^1.4.3",
-    "grunt-contrib-less": "^3.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-shell": "^4.0.0",
-    "grunt-terser": "^2.0.0",
-    "typescript": "^5.5.2"
+    "css-loader": "^7.1.2",
+    "less-loader": "^12.2.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "grunt": "grunt",
-    "tsc": "tsc"
+    "webpack": "webpack --config webpack.config.js"
   }
 }
