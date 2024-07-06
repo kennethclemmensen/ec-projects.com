@@ -4,7 +4,7 @@ package: Testing
 dependencies:
   - drupal:help
 
-# Information added by Drupal.org packaging script on 2024-06-20
-version: '10.3.0'
+# Information added by Drupal.org packaging script on 2024-07-04
+version: '10.3.1'
 project: 'drupal'
-datestamp: 1718911263
+datestamp: 1720094222

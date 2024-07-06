@@ -1,4 +1,4 @@
-name: Single Directory Components
+name: Single-Directory Components
 type: module
 description: 'Allows discovery and rendering of self-contained UI components.'
 # version: VERSION
@@ -8,7 +8,7 @@ lifecycle_link: 'https://www.drupal.org/docs/core-modules-and-themes/deprecated-
 dependencies:
   - drupal:serialization
 
-# Information added by Drupal.org packaging script on 2024-06-20
-version: '10.3.0'
+# Information added by Drupal.org packaging script on 2024-07-04
+version: '10.3.1'
 project: 'drupal'
-datestamp: 1718911263
+datestamp: 1720094222
