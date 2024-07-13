@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = $('.header');
     const headerScrollClass = 'header--scroll';
     $(window).on('scroll', () => {
-        (window.pageYOffset > 0) ? header.addClass(headerScrollClass) : header.removeClass(headerScrollClass);
+        (window.scrollY > 0) ? header.addClass(headerScrollClass) : header.removeClass(headerScrollClass);
     });
 });
