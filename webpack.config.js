@@ -1,6 +1,8 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
 
 export default {
     mode: 'production',
@@ -25,14 +27,7 @@ export default {
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    {
-                        loader: 'less-loader',
-                        options: {
-                            lessOptions: {
-                                compress: true
-                            }
-                        }
-                    }
+                    'less-loader'
                 ]
             }
         ]
@@ -43,6 +38,10 @@ export default {
         })
     ],
     optimization: {
-        minimize: true
+        minimize: true,
+        minimizer: [
+            new CssMinimizerPlugin(),
+            new TerserPlugin()
+        ]
     }
 };
