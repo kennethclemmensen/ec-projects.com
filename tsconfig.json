@@ -3,6 +3,10 @@
       "allowUnreachableCode": false,
       "exactOptionalPropertyTypes": true,
       "forceConsistentCasingInFileNames": true,
+      "lib": [
+        "dom",
+        "es2022"
+      ],
       "noEmitOnError": true,
       "noFallthroughCasesInSwitch": true,
       "noImplicitOverride": true,
@@ -11,12 +15,9 @@
       "noUnusedLocals": true,
       "noUnusedParameters": true,
       "strict": true,
-      "target": "ES2022",
+      "target": "es2015",
       "types": [
           "jquery"
       ]
-    },
-    "include": [
-      "./public/themes/custom/ec-projects/ts/**/*.ts"
-    ]
+    }
   }
