@@ -13,6 +13,7 @@ namespace Symfony\Component\Validator\Constraints;
 
 use Symfony\Component\Intl\Countries;
 use Symfony\Component\PropertyAccess\Exception\NoSuchPropertyException;
+use Symfony\Component\PropertyAccess\Exception\UninitializedPropertyException;
 use Symfony\Component\PropertyAccess\PropertyAccess;
 use Symfony\Component\PropertyAccess\PropertyAccessor;
 use Symfony\Component\Validator\Constraint;
@@ -63,10 +64,7 @@ class BicValidator extends ConstraintValidator
         $this->propertyAccessor = $propertyAccessor;
     }
 
-    /**
-     * @return void
-     */
-    public function validate(mixed $value, Constraint $constraint)
+    public function validate(mixed $value, Constraint $constraint): void
     {
         if (!$constraint instanceof Bic) {
             throw new UnexpectedTypeException($constraint, Bic::class);
@@ -130,6 +128,8 @@ class BicValidator extends ConstraintValidator
                 $iban = $this->getPropertyAccessor()->getValue($object, $path);
             } catch (NoSuchPropertyException $e) {
                 throw new ConstraintDefinitionException(sprintf('Invalid property path "%s" provided to "%s" constraint: ', $path, get_debug_type($constraint)).$e->getMessage(), 0, $e);
+            } catch (UninitializedPropertyException) {
+                $iban = null;
             }
         }
         if (!$iban) {

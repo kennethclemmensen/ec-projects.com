@@ -2,7 +2,7 @@ name: File Download With Counter
 description: Download files and count the number of downloads
 package: Custom
 type: module
-core_version_requirement: 10.x
+core_version_requirement: 11.x
 dependencies:
   - drupal:file
-php: 8.1
+php: 8.2

@@ -1,6 +1,6 @@
 name: EC Projects
 type: theme
-core_version_requirement: 10.x
+core_version_requirement: 11.x
 libraries:
   - ec_projects/font-awesome
   - ec_projects/jquery
