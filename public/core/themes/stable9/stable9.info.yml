@@ -300,7 +300,7 @@ libraries-override:
       theme:
         css/field_ui_display_mode_table.css: css/field_ui/field_ui_display_mode_table.css
 
-# Information added by Drupal.org packaging script on 2024-08-02
-version: '11.0.0'
+# Information added by Drupal.org packaging script on 2024-08-08
+version: '11.0.1'
 project: 'drupal'
-datestamp: 1722578557
+datestamp: 1723108507
