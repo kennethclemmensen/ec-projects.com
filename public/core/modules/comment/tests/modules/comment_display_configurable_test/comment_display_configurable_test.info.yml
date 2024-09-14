@@ -4,7 +4,7 @@ description: 'Support module for comment \Drupal\Core\Field\BaseFieldDefinition:
 package: Testing
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2024-09-05
-version: '11.0.2'
+# Information added by Drupal.org packaging script on 2024-09-12
+version: '11.0.4'
 project: 'drupal'
-datestamp: 1725526813
+datestamp: 1726136530

@@ -4,7 +4,7 @@ description: 'Test theme with the same name as a module.'
 base theme: false
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2024-09-05
-version: '11.0.2'
+# Information added by Drupal.org packaging script on 2024-09-12
+version: '11.0.4'
 project: 'drupal'
-datestamp: 1725526812
+datestamp: 1726136530
