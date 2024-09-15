@@ -140,6 +140,8 @@ libraries-extend:
     - claro/system.admin
   core/drupal.autocomplete:
     - claro/autocomplete
+  tour/tour-styling:
+    - claro/tour-styling
   shortcut/drupal.shortcut:
     - claro/drupal.shortcut
   core/drupal.ajax:
@@ -177,6 +179,6 @@ regions_hidden:
   - sidebar_first
 
 # Information added by Drupal.org packaging script on 2024-09-12
-version: '11.0.4'
+version: '10.3.5'
 project: 'drupal'
-datestamp: 1726136530
+datestamp: 1726135113

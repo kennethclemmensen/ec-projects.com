@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Drupal\Composer\Plugin\VendorHardening;
 
 use Composer\Composer;
@@ -60,7 +58,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
   /**
    * {@inheritdoc}
    */
-  public function activate(Composer $composer, IOInterface $io): void {
+  public function activate(Composer $composer, IOInterface $io) {
     $this->composer = $composer;
     $this->io = $io;
 
@@ -71,19 +69,19 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
   /**
    * {@inheritdoc}
    */
-  public function deactivate(Composer $composer, IOInterface $io): void {
+  public function deactivate(Composer $composer, IOInterface $io) {
   }
 
   /**
    * {@inheritdoc}
    */
-  public function uninstall(Composer $composer, IOInterface $io): void {
+  public function uninstall(Composer $composer, IOInterface $io) {
   }
 
   /**
    * {@inheritdoc}
    */
-  public static function getSubscribedEvents(): array {
+  public static function getSubscribedEvents() {
     return [
       ScriptEvents::POST_AUTOLOAD_DUMP => 'onPostAutoloadDump',
       ScriptEvents::POST_UPDATE_CMD => 'onPostCmd',
@@ -101,7 +99,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @param \Composer\Script\Event $event
    *   The Composer event.
    */
-  public function onPostAutoloadDump(Event $event): void {
+  public function onPostAutoloadDump(Event $event) {
     $this->writeAccessRestrictionFiles($this->composer->getConfig()->get('vendor-dir'));
   }
 
@@ -111,7 +109,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @param \Composer\Script\Event $event
    *   The Composer event.
    */
-  public function onPostCmd(Event $event): void {
+  public function onPostCmd(Event $event) {
     $this->cleanAllPackages();
   }
 
@@ -121,7 +119,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @param \Composer\Installer\PackageEvent $event
    *   The package event.
    */
-  public function onPrePackageInstall(PackageEvent $event): void {
+  public function onPrePackageInstall(PackageEvent $event) {
     /** @var \Composer\Package\CompletePackage $package */
     $package = $event->getOperation()->getPackage();
     $this->removeBinBeforeCleanup($package);
@@ -133,7 +131,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @param \Composer\Installer\PackageEvent $event
    *   The package event.
    */
-  public function onPrePackageUpdate(PackageEvent $event): void {
+  public function onPrePackageUpdate(PackageEvent $event) {
     /** @var \Composer\Package\CompletePackage $package */
     $package = $event->getOperation()->getTargetPackage();
     $this->removeBinBeforeCleanup($package);
@@ -145,7 +143,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @param \Composer\Installer\PackageEvent $event
    *   The package event.
    */
-  public function onPostPackageInstall(PackageEvent $event): void {
+  public function onPostPackageInstall(PackageEvent $event) {
     $this->cleanPackage($event->getOperation()->getPackage());
   }
 
@@ -155,7 +153,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @param \Composer\Installer\PackageEvent $event
    *   The package event.
    */
-  public function onPostPackageUpdate(PackageEvent $event): void {
+  public function onPostPackageUpdate(PackageEvent $event) {
     $this->cleanPackage($event->getOperation()->getTargetPackage());
   }
 
@@ -168,7 +166,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @param \Composer\Package\BasePackage $package
    *   The package we're cleaning up.
    */
-  protected function removeBinBeforeCleanup(BasePackage $package): void {
+  protected function removeBinBeforeCleanup(BasePackage $package) {
     // We can process AliasPackage and Package objects, and they share the
     // BasePackage parent class. However, since there is no common interface for
     // these package types that allow for the setBinaries() method, and since
@@ -210,7 +208,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @return string[]
    *   Bin files to remove, with the file as both the key and the value.
    */
-  protected function findBinOverlap(array $binaries, array $clean_paths): array {
+  protected function findBinOverlap($binaries, $clean_paths) {
     // Make a filesystem model to explore. This is a keyed array that looks like
     // all the places that will be removed by cleanup. 'tests/src' becomes
     // $filesystem['tests']['src'] = TRUE;
@@ -252,7 +250,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @return \Composer\Package\PackageInterface[]
    *   The list of installed packages.
    */
-  protected function getInstalledPackages(): array {
+  protected function getInstalledPackages() {
     return $this->composer->getRepositoryManager()->getLocalRepository()->getPackages();
   }
 
@@ -266,7 +264,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    *   Path to the install path for the package, relative to the project. This
    *   accounts for changes made by composer/installers, if any.
    */
-  protected function getInstallPathForPackage(PackageInterface $package): string {
+  protected function getInstallPathForPackage(PackageInterface $package) {
     return $this->composer->getInstallationManager()->getInstallPath($package);
   }
 
@@ -275,7 +273,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    *
    * This applies in the context of a post-command event.
    */
-  public function cleanAllPackages(): void {
+  public function cleanAllPackages() {
     // Get a list of all the packages available after the update or install
     // command.
     $installed_packages = [];
@@ -311,7 +309,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @param \Composer\Package\PackageInterface $package
    *   The package to clean.
    */
-  public function cleanPackage(PackageInterface $package): void {
+  public function cleanPackage(PackageInterface $package) {
     // Normalize package names to lower case.
     $package_name = strtolower($package->getName());
     if (isset($this->packagesAlreadyCleaned[$package_name])) {
@@ -334,7 +332,7 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
    * @param string[] $paths_for_package
    *   List of directories in $package_name to remove
    */
-  protected function cleanPathsForPackage(PackageInterface $package, $paths_for_package): void {
+  protected function cleanPathsForPackage(PackageInterface $package, $paths_for_package) {
     // Whatever happens here, this package counts as cleaned so that we don't
     // process it more than once.
     $package_name = strtolower($package->getName());
@@ -370,15 +368,18 @@ class VendorHardeningPlugin implements PluginInterface, EventSubscriberInterface
   }
 
   /**
-   * Place .htaccess file into the vendor directory.
+   * Place .htaccess and web.config files into the vendor directory.
    *
    * @param string $vendor_dir
    *   Path to vendor directory.
    */
-  public function writeAccessRestrictionFiles(string $vendor_dir): void {
-    $this->io->writeError('<info>Hardening vendor directory with .htaccess file.</info>');
+  public function writeAccessRestrictionFiles($vendor_dir) {
+    $this->io->writeError('<info>Hardening vendor directory with .htaccess and web.config files.</info>');
     // Prevent access to vendor directory on Apache servers.
     FileSecurity::writeHtaccess($vendor_dir, TRUE);
+
+    // Prevent access to vendor directory on IIS servers.
+    FileSecurity::writeWebConfig($vendor_dir);
   }
 
 }
