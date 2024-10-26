@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "@types/jquery": "^3.5.31",
+    "@types/jquery": "^3.5.32",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "less-loader": "^12.2.0",
