@@ -6,7 +6,7 @@ regions:
   content: Content
   help: Help
 
-# Information added by Drupal.org packaging script on 2024-10-03
-version: '10.3.6'
+# Information added by Drupal.org packaging script on 2024-11-07
+version: '10.3.7'
 project: 'drupal'
-datestamp: 1727949003
+datestamp: 1730969157
