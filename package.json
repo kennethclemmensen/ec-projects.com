@@ -9,7 +9,7 @@
     "css-minimizer-webpack-plugin": "^7.0.0",
     "less-loader": "^12.2.0",
     "mini-css-extract-plugin": "^2.9.2",
-    "terser-webpack-plugin": "^5.3.10",
+    "terser-webpack-plugin": "^5.3.11",
     "ts-loader": "^9.5.1",
     "typescript": "^5.7.2",
     "webpack": "^5.97.1",
