@@ -3,12 +3,12 @@ type: module
 description: 'Displays help topics provided by themes and modules.'
 package: Core (Experimental)
 lifecycle: deprecated
-lifecycle_link: https://www.drupal.org/node/3223395#s-help_topics
+lifecycle_link: https://www.drupal.org/node/3223395#s-help-topics
 # version: VERSION
 dependencies:
   - drupal:help
 
-# Information added by Drupal.org packaging script on 2024-11-22
-version: '10.3.10'
+# Information added by Drupal.org packaging script on 2024-12-17
+version: '10.4.0'
 project: 'drupal'
-datestamp: 1732284484
+datestamp: 1734475255
