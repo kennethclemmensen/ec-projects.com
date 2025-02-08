@@ -4,7 +4,7 @@ description: 'Provides test support for @DataType-level normalization.'
 package: Testing
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2025-01-06
-version: '10.4.1'
+# Information added by Drupal.org packaging script on 2025-02-05
+version: '10.4.2'
 project: 'drupal'
-datestamp: 1736207983
+datestamp: 1738798431
