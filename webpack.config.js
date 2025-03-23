@@ -8,7 +8,7 @@ export default {
     mode: 'production',
     entry: {
         default: [
-            './public/themes/custom/ec-projects/ts/script.ts',
+            './public/themes/custom/ec-projects/ts/app.ts',
             './public/themes/custom/ec-projects/less/style.less'
         ] 
     },
