@@ -11,8 +11,3 @@ global-styling:
       dist/default.css: {}
   js:
     dist/default.js: {}
-
-jquery:
-  version: 3.7.1
-  js:
-    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js: { type: external, minified: true }

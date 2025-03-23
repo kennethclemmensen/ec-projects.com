@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    $('.header__nav-trigger').on('click', (event) => {
+    document.getElementsByClassName('header__nav-trigger')[0]?.addEventListener('click', (event) => {
         event.preventDefault();
-        $('html, body').toggleClass('show-mobile-menu');
-        $('.mobile-menu').toggleClass('mobile-menu--active');
+        document.getElementsByTagName('html')[0]?.classList.toggle('show-mobile-menu');
+        document.getElementsByTagName('body')[0]?.classList.toggle('show-mobile-menu');
+        document.getElementsByClassName('mobile-menu')[0]?.classList.toggle('mobile-menu--active');
     });
-    const header = $('.header');
+    const header = document.getElementsByClassName('header')[0];
     const headerScrollClass = 'header--scroll';
-    $(window).on('scroll', () => {
-        (window.scrollY > 0) ? header.addClass(headerScrollClass) : header.removeClass(headerScrollClass);
+    window.addEventListener('scroll', () => {
+        if (header != null) {
+            (window.scrollY > 0) ? header.classList.add(headerScrollClass) : header.classList.remove(headerScrollClass);
+        }
     });
     const sliderTrack = document.getElementById('slider-track');
     if (sliderTrack != null) {
@@ -22,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 index = numberOfSlides - 1;
             }
             sliderTrack.style.transform = `translate3d(-${clientWidth * index}px, 0, 0)`;
-            console.log(index);
         });
         document.getElementById('next-arrow')?.addEventListener('click', () => {
             index++;
@@ -30,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 index = 0;
             }
             sliderTrack.style.transform = `translate3d(-${clientWidth * index}px, 0, 0)`;
-            console.log(index);
         });
     }
 });

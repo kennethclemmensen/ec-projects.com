@@ -15,9 +15,6 @@
       "noUnusedLocals": true,
       "noUnusedParameters": true,
       "strict": true,
-      "target": "es2015",
-      "types": [
-          "jquery"
-      ]
+      "target": "es2015"
     }
   }
