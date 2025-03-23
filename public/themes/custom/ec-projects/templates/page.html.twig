@@ -79,14 +79,15 @@
 </nav>
 <main class="page">
     <div class="slider">
-        <div id="slider">
+        <div class="slider__track" id="slider-track">
             {% for slide in slides %}
-                <div class="slider__slide">
-                    <div class="slider__slide-image" style="background-image: url({{ slide }})"></div>
-                </div>
+                <div class="slider__slide" style="background-image: url({{ slide }})"></div>
             {% endfor %}
         </div>
-        <div class="slider__arrows"></div>
+        <div class="slider__arrows">
+            <span class="slider__arrow" id="previous-arrow"></span>
+            <span class="slider__arrow slider__arrow--next" id="next-arrow"></span>
+        </div>
     </div>
     <div class="page__container">
         {% if is_front %}

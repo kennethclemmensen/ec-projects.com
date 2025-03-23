@@ -1,14 +1,16 @@
 .slider {
   position: relative;
+  overflow-x: hidden;
+}
+
+.slider__track {
+  display: flex;
 }
 
 .slider__slide {
-
-}
-
-.slider__slide-image {
   background: no-repeat center;
   background-size: cover;
+  width: 100%;
   height: 250px;
   @media @tablet {
     height: 500px;
@@ -16,18 +18,15 @@
 }
 
 .slider__arrows {
-  display: none;
-  @media @tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .slider__arrow {
