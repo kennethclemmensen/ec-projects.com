@@ -43,5 +43,8 @@ export default {
             new CssMinimizerPlugin(),
             new TerserPlugin()
         ]
+    },
+    resolve: {
+        extensions: ['.ts']
     }
 };
