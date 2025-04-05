@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
+import { watch } from 'fs';
 
 export default {
     mode: 'production',
@@ -46,5 +47,6 @@ export default {
     },
     resolve: {
         extensions: ['.ts']
-    }
+    },
+    watch: true
 };
