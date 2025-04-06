@@ -1,20 +1,21 @@
 {
-    "compilerOptions": {
-      "allowUnreachableCode": false,
-      "exactOptionalPropertyTypes": true,
-      "forceConsistentCasingInFileNames": true,
-      "lib": [
-        "dom",
-        "es2022"
-      ],
-      "noEmitOnError": true,
-      "noFallthroughCasesInSwitch": true,
-      "noImplicitOverride": true,
-      "noImplicitReturns": true,
-      "noUncheckedIndexedAccess": true,
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "strict": true,
-      "target": "es2015"
-    }
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "dom",
+      "es2022"
+    ],
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "target": "es2015"
   }
+}
