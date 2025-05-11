@@ -10,7 +10,7 @@ export default {
         default: [
             './public/themes/custom/ec-projects/ts/app.ts',
             './public/themes/custom/ec-projects/less/style.less'
-        ] 
+        ]
     },
     output: {
         filename: '[name].js',
@@ -45,6 +45,20 @@ export default {
         ]
     },
     resolve: {
-        extensions: ['.ts']
+        extensions: ['.ts', '.js']
+    },
+    devServer: {
+        client: false, // disable webpack-dev-server client injection
+        devMiddleware: {
+            writeToDisk: true // write compiled files to disk
+        },
+        hot: false, // disable hot module replacement
+        port: 3000,
+        // proxy - https://webpack.js.org/configuration/dev-server/#devserverproxy
+        proxy: [{
+            context: ['/'],
+            target: 'http://ec-projects.test',
+            changeOrigin: true
+        }]
     }
 };
