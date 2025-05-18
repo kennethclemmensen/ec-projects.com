@@ -1,3 +1,4 @@
+import { fromEvent } from 'rxjs';
 import { EventType } from './eventType';
 
 /**
@@ -23,25 +24,29 @@ export class Slider {
     private setupSlider() {
         const numberOfSlides = this.slides.length;
         let index = 0;
+        const previousArrow = document.getElementById('previous-arrow');
+        const nextArrow = document.getElementById('next-arrow');
         this.slides.forEach((slide, i) => {
             slide.style.transform = `translateX(${i * 100}%)`;
         });
-        document.getElementById('previous-arrow')?.addEventListener(EventType.Click, () => {
-            index--;
-            if (index < 0) {
-                index = numberOfSlides - 1;
-            }
-            this.currentSlideIndex = index;
-            this.moveSlides();
-        });
-        document.getElementById('next-arrow')?.addEventListener(EventType.Click, () => {
-            index++;
-            if (index === numberOfSlides) {
-                index = 0;
-            }
-            this.currentSlideIndex = index;
-            this.moveSlides();
-        });
+        if (previousArrow != null && nextArrow != null) {
+            fromEvent(previousArrow, EventType.Click).subscribe(() => {
+                index--;
+                if (index < 0) {
+                    index = numberOfSlides - 1;
+                }
+                this.currentSlideIndex = index;
+                this.moveSlides();
+            });
+            fromEvent(nextArrow, EventType.Click).subscribe(() => {
+                index++;
+                if (index === numberOfSlides) {
+                    index = 0;
+                }
+                this.currentSlideIndex = index;
+                this.moveSlides();
+            });
+        }
     }
 
     /**
