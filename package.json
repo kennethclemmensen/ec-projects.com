@@ -11,6 +11,7 @@
     "css-minimizer-webpack-plugin": "^7.0.2",
     "less-loader": "^12.3.0",
     "mini-css-extract-plugin": "^2.9.2",
+    "needle": "^3.3.1",
     "terser-webpack-plugin": "^5.3.14",
     "ts-loader": "^9.5.2",
     "typescript": "^5.9.2",
