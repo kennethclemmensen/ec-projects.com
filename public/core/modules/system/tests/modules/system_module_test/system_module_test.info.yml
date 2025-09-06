@@ -4,7 +4,7 @@ description: 'Provides hook implementations for testing System module functional
 package: Testing
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2025-08-07
-version: '10.5.2'
+# Information added by Drupal.org packaging script on 2025-09-04
+version: '10.5.3'
 project: 'drupal'
-datestamp: 1754564133
+datestamp: 1756978279
