@@ -27,10 +27,11 @@
 {{ menus.menu_links(items, attributes, 0) }}
 
 {% macro menu_links(items, attributes, menu_level) %}
+  {% set primary_nav_level = 'menu--level-' ~ (menu_level + 1) %}
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('menu') }}>
+      <ul{{ attributes.addClass('menu', primary_nav_level) }}>
     {% else %}
       <ul class="menu">
     {% endif %}

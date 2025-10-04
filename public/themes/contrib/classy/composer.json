@@ -9,6 +9,6 @@
         "source": "https://git.drupalcode.org/project/classy"
     },
     "require": {
-        "drupal/stable": "^2.0.0"
+        "drupal/stable": "^2.1"
     }
 }

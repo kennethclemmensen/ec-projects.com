@@ -24,7 +24,7 @@ class ClassyTest extends BrowserTestBase {
   public function testRegressionMissingMessagesCss() {
     $this->drupalGet('');
     $this->assertSession()->statusCodeEquals(200);
-    $this->assertSession()->responseContains('classy/css/components/messages.css');
+    $this->assertSession()->responseContains('css/components/messages.css');
   }
 
 }
