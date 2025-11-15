@@ -5,7 +5,7 @@ package: Core
 # version: VERSION
 configure: block.admin_display
 
-# Information added by Drupal.org packaging script on 2025-11-06
-version: '10.5.5'
+# Information added by Drupal.org packaging script on 2025-11-12
+version: '10.5.6'
 project: 'drupal'
-datestamp: 1762403446
+datestamp: 1762990926

@@ -85,7 +85,7 @@ libraries-extend:
   content_moderation/content_moderation:
     - olivero/content_moderation
 
-# Information added by Drupal.org packaging script on 2025-11-06
-version: '10.5.5'
+# Information added by Drupal.org packaging script on 2025-11-12
+version: '10.5.6'
 project: 'drupal'
-datestamp: 1762403445
+datestamp: 1762990926
