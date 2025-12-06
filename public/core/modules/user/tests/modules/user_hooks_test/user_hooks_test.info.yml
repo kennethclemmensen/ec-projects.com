@@ -4,7 +4,7 @@ description: 'Support module for user hooks testing.'
 package: Testing
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2025-11-12
-version: '10.5.6'
+# Information added by Drupal.org packaging script on 2025-12-04
+version: '10.5.7'
 project: 'drupal'
-datestamp: 1762990926
+datestamp: 1764838002
