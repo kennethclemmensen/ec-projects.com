@@ -6,7 +6,7 @@ lifecycle: deprecated
 lifecycle_link: https://www.drupal.org/docs/core-modules-and-themes/deprecated-and-obsolete-modules-and-themes#s-tour
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2025-12-04
-version: '10.5.7'
+# Information added by Drupal.org packaging script on 2025-12-09
+version: '10.5.8'
 project: 'drupal'
-datestamp: 1764838002
+datestamp: 1765309401
