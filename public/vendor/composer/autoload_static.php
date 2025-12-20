@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365
+class ComposerStaticInitfdb267e3558ca35b5dfe5d7250b36e07
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -70,7 +70,6 @@ class ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365
             'Psr\\Http\\Client\\' => 16,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
-            'Psr\\Cache\\' => 10,
             'Peast\\' => 6,
         ),
         'M' => 
@@ -96,7 +95,6 @@ class ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365
             'Drupal\\Component\\' => 17,
             'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
-            'Doctrine\\Common\\Annotations\\' => 28,
         ),
         'C' => 
         array (
@@ -251,10 +249,6 @@ class ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Psr\\Cache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/cache/src',
-        ),
         'Peast\\' => 
         array (
             0 => __DIR__ . '/..' . '/mck89/peast/lib/Peast',
@@ -306,10 +300,6 @@ class ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365
         'Doctrine\\Common\\Lexer\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/src',
-        ),
-        'Doctrine\\Common\\Annotations\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
         ),
         'Composer\\Semver\\' => 
         array (
@@ -405,10 +395,10 @@ class ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit20af88fb6f7961cfdbd4c04ac8b4a365::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitfdb267e3558ca35b5dfe5d7250b36e07::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitfdb267e3558ca35b5dfe5d7250b36e07::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitfdb267e3558ca35b5dfe5d7250b36e07::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitfdb267e3558ca35b5dfe5d7250b36e07::$classMap;
 
         }, null, ClassLoader::class);
     }
