@@ -6,7 +6,7 @@ package: Core
 dependencies:
   - drupal:field
 
-# Information added by Drupal.org packaging script on 2025-12-18
-version: '10.6.1'
+# Information added by Drupal.org packaging script on 2026-01-08
+version: '10.6.2'
 project: 'drupal'
-datestamp: 1766067113
+datestamp: 1767866505
