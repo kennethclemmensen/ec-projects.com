@@ -10,7 +10,7 @@ dependencies:
   - drupal:file
   - drupal:layout_builder
 
-# Information added by Drupal.org packaging script on 2026-01-08
-version: '10.6.2'
+# Information added by Drupal.org packaging script on 2026-02-05
+version: '10.6.3'
 project: 'drupal'
-datestamp: 1767866505
+datestamp: 1770280412
