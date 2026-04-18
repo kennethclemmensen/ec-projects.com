@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '10.6.6',
-        'version' => '10.6.6.0',
+        'pretty_version' => '10.6.7',
+        'version' => '10.6.7.0',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '97b50c1bc8a31b812ca696adfe65d442e82251b8',
+        'reference' => '27753532d901063382ac48b1936f7675b5cdbf5e',
         'name' => 'drupal/legacy-project',
         'dev' => false,
     ),
@@ -56,35 +56,35 @@
             'dev_requirement' => false,
         ),
         'drupal/core' => array(
-            'pretty_version' => '10.6.6',
-            'version' => '10.6.6.0',
+            'pretty_version' => '10.6.7',
+            'version' => '10.6.7.0',
             'type' => 'drupal-core',
             'install_path' => __DIR__ . '/../../core',
             'aliases' => array(),
-            'reference' => 'b20827f9bc8d9fa05019796c7e6ee9c419e25ba9',
+            'reference' => 'd6e217d684894e5a0e6fb28261184dd57450bedb',
             'dev_requirement' => false,
         ),
         'drupal/core-annotation' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-assertion' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-class-finder' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-composer-scaffold' => array(
-            'pretty_version' => '10.6.6',
-            'version' => '10.6.6.0',
+            'pretty_version' => '10.6.7',
+            'version' => '10.6.7.0',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../drupal/core-composer-scaffold',
             'aliases' => array(),
@@ -94,90 +94,90 @@
         'drupal/core-datetime' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-dependency-injection' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-diff' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-discovery' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-event-dispatcher' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-file-cache' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-file-security' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-filesystem' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-front-matter' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-gettext' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-graph' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-http-foundation' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-php-storage' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-plugin' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-project-message' => array(
-            'pretty_version' => '10.6.6',
-            'version' => '10.6.6.0',
+            'pretty_version' => '10.6.7',
+            'version' => '10.6.7.0',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../drupal/core-project-message',
             'aliases' => array(),
@@ -187,51 +187,51 @@
         'drupal/core-proxy-builder' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-recommended' => array(
-            'pretty_version' => '10.6.6',
-            'version' => '10.6.6.0',
+            'pretty_version' => '10.6.7',
+            'version' => '10.6.7.0',
             'type' => 'metapackage',
             'install_path' => null,
             'aliases' => array(),
-            'reference' => '4e0bcb3040f69f47d2a67a604a7a0e7956073269',
+            'reference' => '617efa3bd4c20d48b2f0189489a42d06138f1086',
             'dev_requirement' => false,
         ),
         'drupal/core-render' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-serialization' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-transliteration' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-utility' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-uuid' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/core-vendor-hardening' => array(
-            'pretty_version' => '10.6.6',
-            'version' => '10.6.6.0',
+            'pretty_version' => '10.6.7',
+            'version' => '10.6.7.0',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../drupal/core-vendor-hardening',
             'aliases' => array(),
@@ -241,16 +241,16 @@
         'drupal/core-version' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '10.6.6',
+                0 => '10.6.7',
             ),
         ),
         'drupal/legacy-project' => array(
-            'pretty_version' => '10.6.6',
-            'version' => '10.6.6.0',
+            'pretty_version' => '10.6.7',
+            'version' => '10.6.7.0',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '97b50c1bc8a31b812ca696adfe65d442e82251b8',
+            'reference' => '27753532d901063382ac48b1936f7675b5cdbf5e',
             'dev_requirement' => false,
         ),
         'egulias/email-validator' => array(

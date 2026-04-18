@@ -3,7 +3,7 @@ type: theme
 # version: VERSION
 base theme: test_parent_theme
 
-# Information added by Drupal.org packaging script on 2026-04-08
-version: '10.6.6'
+# Information added by Drupal.org packaging script on 2026-04-15
+version: '10.6.7'
 project: 'drupal'
-datestamp: 1775642273
+datestamp: 1776277877
