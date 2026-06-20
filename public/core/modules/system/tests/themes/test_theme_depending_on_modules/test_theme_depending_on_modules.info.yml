@@ -5,7 +5,7 @@ dependencies:
   - test_module_required_by_theme
   - test_another_module_required_by_theme
 
-# Information added by Drupal.org packaging script on 2026-05-28
-version: '10.6.10'
+# Information added by Drupal.org packaging script on 2026-06-17
+version: '10.6.11'
 project: 'drupal'
-datestamp: 1779971301
+datestamp: 1781717145

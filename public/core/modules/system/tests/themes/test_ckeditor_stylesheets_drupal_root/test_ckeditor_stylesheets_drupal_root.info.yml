@@ -8,7 +8,7 @@ base theme: false
 ckeditor5-stylesheets:
   - /core/modules/system/tests/themes/test_ckeditor_stylesheets_drupal_root/css/yokotsoko.css
 
-# Information added by Drupal.org packaging script on 2026-05-28
-version: '10.6.10'
+# Information added by Drupal.org packaging script on 2026-06-17
+version: '10.6.11'
 project: 'drupal'
-datestamp: 1779971301
+datestamp: 1781717145

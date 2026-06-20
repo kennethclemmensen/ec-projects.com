@@ -422,17 +422,17 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.6.10",
-            "version_normalized": "10.6.10.0",
+            "version": "10.6.11",
+            "version_normalized": "10.6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "61fa5c89b6ac4a4215035976b5313cbf5a35a351"
+                "reference": "5ead41c42f6ec4f2b5c6d5e6956e697fda3b9464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/61fa5c89b6ac4a4215035976b5313cbf5a35a351",
-                "reference": "61fa5c89b6ac4a4215035976b5313cbf5a35a351",
+                "url": "https://api.github.com/repos/drupal/core/zipball/5ead41c42f6ec4f2b5c6d5e6956e697fda3b9464",
+                "reference": "5ead41c42f6ec4f2b5c6d5e6956e697fda3b9464",
                 "shasum": ""
             },
             "require": {
@@ -455,7 +455,7 @@
                 "ext-tokenizer": "*",
                 "ext-xml": "*",
                 "guzzlehttp/guzzle": "^7.5",
-                "guzzlehttp/psr7": "^2.4.5",
+                "guzzlehttp/psr7": "^2.10.2",
                 "masterminds/html5": "^2.7",
                 "mck89/peast": "^1.14",
                 "pear/archive_tar": "^1.4.14",
@@ -590,8 +590,8 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.6.10",
-            "version_normalized": "10.6.10.0",
+            "version": "10.6.11",
+            "version_normalized": "10.6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -638,8 +638,8 @@
         },
         {
             "name": "drupal/core-project-message",
-            "version": "10.6.10",
-            "version_normalized": "10.6.10.0",
+            "version": "10.6.11",
+            "version_normalized": "10.6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -677,17 +677,17 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.6.10",
-            "version_normalized": "10.6.10.0",
+            "version": "10.6.11",
+            "version_normalized": "10.6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "81fe6c19d1b5f4fd2c966b59659952a815c1cc82"
+                "reference": "a3a56d98d7ea31f2aeb4c87dc36472ed47ba126a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/81fe6c19d1b5f4fd2c966b59659952a815c1cc82",
-                "reference": "81fe6c19d1b5f4fd2c966b59659952a815c1cc82",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/a3a56d98d7ea31f2aeb4c87dc36472ed47ba126a",
+                "reference": "a3a56d98d7ea31f2aeb4c87dc36472ed47ba126a",
                 "shasum": ""
             },
             "require": {
@@ -695,11 +695,11 @@
                 "composer/semver": "~3.4.4",
                 "doctrine/deprecations": "~1.1.5",
                 "doctrine/lexer": "~2.1.1",
-                "drupal/core": "10.6.10",
+                "drupal/core": "10.6.11",
                 "egulias/email-validator": "~4.0.4",
                 "guzzlehttp/guzzle": "~7.10.0",
                 "guzzlehttp/promises": "~2.3.0",
-                "guzzlehttp/psr7": "~2.8.0",
+                "guzzlehttp/psr7": "~2.10.4",
                 "masterminds/html5": "~2.10.0",
                 "mck89/peast": "~v1.17.4",
                 "pear/archive_tar": "~1.6.0",
@@ -757,8 +757,8 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "10.6.10",
-            "version_normalized": "10.6.10.0",
+            "version": "10.6.11",
+            "version_normalized": "10.6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -866,17 +866,17 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.10.5",
-            "version_normalized": "7.10.5.0",
+            "version": "7.10.6",
+            "version_normalized": "7.10.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "7c8d84b39e680315f687e8662a9d6fb0865c5148"
+                "reference": "e7412b3180912c01650cc66647f18c1d1cbe9b94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7c8d84b39e680315f687e8662a9d6fb0865c5148",
-                "reference": "7c8d84b39e680315f687e8662a9d6fb0865c5148",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/e7412b3180912c01650cc66647f18c1d1cbe9b94",
+                "reference": "e7412b3180912c01650cc66647f18c1d1cbe9b94",
                 "shasum": ""
             },
             "require": {
@@ -904,7 +904,7 @@
                 "ext-intl": "Required for Internationalized Domain Name (IDN) support",
                 "psr/log": "Required for using the Log middleware"
             },
-            "time": "2026-05-27T11:53:46+00:00",
+            "time": "2026-06-01T13:06:22+00:00",
             "type": "library",
             "extra": {
                 "bamarni-bin": {
@@ -976,7 +976,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.10.5"
+                "source": "https://github.com/guzzle/guzzle/tree/7.10.6"
             },
             "funding": [
                 {
@@ -1082,17 +1082,17 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.8.1",
-            "version_normalized": "2.8.1.0",
+            "version": "2.10.4",
+            "version_normalized": "2.10.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "718f1ee6a878be5290af3557aeda0c91278361d9"
+                "reference": "d2a1a094e396da8957e797489fddaf860c340cfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/718f1ee6a878be5290af3557aeda0c91278361d9",
-                "reference": "718f1ee6a878be5290af3557aeda0c91278361d9",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/d2a1a094e396da8957e797489fddaf860c340cfc",
+                "reference": "d2a1a094e396da8957e797489fddaf860c340cfc",
                 "shasum": ""
             },
             "require": {
@@ -1107,13 +1107,14 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
-                "http-interop/http-factory-tests": "0.9.0",
-                "phpunit/phpunit": "^8.5.44 || ^9.6.25"
+                "http-interop/http-factory-tests": "1.1.0",
+                "jshttp/mime-db": "1.54.0.1",
+                "phpunit/phpunit": "^8.5.52 || ^9.6.34"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
-            "time": "2026-03-10T09:55:26+00:00",
+            "time": "2026-05-29T12:59:07+00:00",
             "type": "library",
             "extra": {
                 "bamarni-bin": {
@@ -1181,7 +1182,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.8.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.10.4"
             },
             "funding": [
                 {
@@ -4639,17 +4640,17 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.27.0",
-            "version_normalized": "3.27.0.0",
+            "version": "v3.27.1",
+            "version_normalized": "3.27.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "04ae1bfe9463c816cf72ca0abe7eae2c77a9a9ed"
+                "reference": "ae2071bffb38f04847fc0864d730c94b9cb8ab74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/04ae1bfe9463c816cf72ca0abe7eae2c77a9a9ed",
-                "reference": "04ae1bfe9463c816cf72ca0abe7eae2c77a9a9ed",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ae2071bffb38f04847fc0864d730c94b9cb8ab74",
+                "reference": "ae2071bffb38f04847fc0864d730c94b9cb8ab74",
                 "shasum": ""
             },
             "require": {
@@ -4664,7 +4665,7 @@
                 "psr/container": "^1.0|^2.0",
                 "symfony/phpunit-bridge": "^5.4.9|^6.4|^7.0"
             },
-            "time": "2026-05-27T13:05:51+00:00",
+            "time": "2026-05-30T17:09:26+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -4706,7 +4707,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.27.0"
+                "source": "https://github.com/twigphp/Twig/tree/v3.27.1"
             },
             "funding": [
                 {
