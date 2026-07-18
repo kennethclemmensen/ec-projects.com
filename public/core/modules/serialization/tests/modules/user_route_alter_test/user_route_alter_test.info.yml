@@ -3,7 +3,7 @@ description: 'Provides test support for user route alter tests.'
 type: module
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2026-06-23
-version: '10.6.12'
+# Information added by Drupal.org packaging script on 2026-07-15
+version: '10.6.13'
 project: 'drupal'
-datestamp: 1782202799
+datestamp: 1784144271
