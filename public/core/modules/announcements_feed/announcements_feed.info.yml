@@ -4,7 +4,7 @@ description: Displays announcements from the Drupal community.
 # version: VERSION
 package: Core
 
-# Information added by Drupal.org packaging script on 2026-07-15
-version: '10.6.13'
+# Information added by Drupal.org packaging script on 2026-07-23
+version: '10.6.14'
 project: 'drupal'
-datestamp: 1784144272
+datestamp: 1784770616
