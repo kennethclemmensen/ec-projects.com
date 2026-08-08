@@ -3,7 +3,7 @@ type: module
 description: 'Provides a custom field access hook to test JSON API field access security.'
 package: Testing
 
-# Information added by Drupal.org packaging script on 2026-07-23
-version: '10.6.14'
+# Information added by Drupal.org packaging script on 2026-08-06
+version: '10.6.15'
 project: 'drupal'
-datestamp: 1784770616
+datestamp: 1786011186
