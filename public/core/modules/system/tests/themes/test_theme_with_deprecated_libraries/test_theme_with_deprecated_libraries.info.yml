@@ -21,7 +21,7 @@ libraries-extend:
   theme_test/another_deprecated_library:
     - test_theme_with_deprecated_libraries/library
 
-# Information added by Drupal.org packaging script on 2026-08-06
-version: '10.6.15'
+# Information added by Drupal.org packaging script on 2026-09-03
+version: '10.6.16'
 project: 'drupal'
-datestamp: 1786011186
+datestamp: 1788424895
