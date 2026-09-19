@@ -8,7 +8,7 @@ lifecycle_link: 'https://www.drupal.org/docs/core-modules-and-themes/deprecated-
 dependencies:
   - drupal:serialization
 
-# Information added by Drupal.org packaging script on 2026-09-03
-version: '10.6.16'
+# Information added by Drupal.org packaging script on 2026-09-16
+version: '10.6.17'
 project: 'drupal'
-datestamp: 1788424895
+datestamp: 1789574844
