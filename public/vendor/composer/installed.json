@@ -422,17 +422,17 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.6.17",
-            "version_normalized": "10.6.17.0",
+            "version": "10.6.18",
+            "version_normalized": "10.6.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "d1582327fe0f1b8c8d80e1712ea8ce1e990d8931"
+                "reference": "4eb6dcf591944b9078635a78e132767f18908963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/d1582327fe0f1b8c8d80e1712ea8ce1e990d8931",
-                "reference": "d1582327fe0f1b8c8d80e1712ea8ce1e990d8931",
+                "url": "https://api.github.com/repos/drupal/core/zipball/4eb6dcf591944b9078635a78e132767f18908963",
+                "reference": "4eb6dcf591944b9078635a78e132767f18908963",
                 "shasum": ""
             },
             "require": {
@@ -584,7 +584,8 @@
                     "lib/Drupal/Component/Datetime/Time.php"
                 ],
                 "files": [
-                    "includes/bootstrap.inc"
+                    "includes/bootstrap.inc",
+                    "includes/guzzle_file_cookie_jar_shim.php"
                 ]
             },
             "scripts": {
@@ -600,8 +601,8 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.6.17",
-            "version_normalized": "10.6.17.0",
+            "version": "10.6.18",
+            "version_normalized": "10.6.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -648,8 +649,8 @@
         },
         {
             "name": "drupal/core-project-message",
-            "version": "10.6.17",
-            "version_normalized": "10.6.17.0",
+            "version": "10.6.18",
+            "version_normalized": "10.6.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -687,17 +688,17 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.6.17",
-            "version_normalized": "10.6.17.0",
+            "version": "10.6.18",
+            "version_normalized": "10.6.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "1ea276ff93df5037009b4cb81289152048b40f29"
+                "reference": "f81526840d467840b9924db989c27a0d07ee501c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/1ea276ff93df5037009b4cb81289152048b40f29",
-                "reference": "1ea276ff93df5037009b4cb81289152048b40f29",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/f81526840d467840b9924db989c27a0d07ee501c",
+                "reference": "f81526840d467840b9924db989c27a0d07ee501c",
                 "shasum": ""
             },
             "require": {
@@ -705,7 +706,7 @@
                 "composer/semver": "~3.4.4",
                 "doctrine/deprecations": "~1.1.5",
                 "doctrine/lexer": "~2.1.1",
-                "drupal/core": "10.6.17",
+                "drupal/core": "10.6.18",
                 "egulias/email-validator": "~4.0.4",
                 "masterminds/html5": "~2.10.0",
                 "mck89/peast": "~v1.17.4",
@@ -756,8 +757,8 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "10.6.17",
-            "version_normalized": "10.6.17.0",
+            "version": "10.6.18",
+            "version_normalized": "10.6.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -4730,17 +4731,17 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.28.0",
-            "version_normalized": "3.28.0.0",
+            "version": "v3.30.0",
+            "version_normalized": "3.30.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "597c12ed286fb9d1701a36684ce6e0cbe28ebc8b"
+                "reference": "8c737079b726af72ff8ef3c595be9f6a810ea1ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/597c12ed286fb9d1701a36684ce6e0cbe28ebc8b",
-                "reference": "597c12ed286fb9d1701a36684ce6e0cbe28ebc8b",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/8c737079b726af72ff8ef3c595be9f6a810ea1ef",
+                "reference": "8c737079b726af72ff8ef3c595be9f6a810ea1ef",
                 "shasum": ""
             },
             "require": {
@@ -4755,7 +4756,7 @@
                 "psr/container": "^1.0|^2.0",
                 "symfony/phpunit-bridge": "^5.4.9|^6.4|^7.0"
             },
-            "time": "2026-07-03T20:44:34+00:00",
+            "time": "2026-09-25T13:20:01+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -4797,7 +4798,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.28.0"
+                "source": "https://github.com/twigphp/Twig/tree/v3.30.0"
             },
             "funding": [
                 {

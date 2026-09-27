@@ -65,7 +65,7 @@ regions:
   page_top: 'Page top' # Needed by Drupal Core
   page_bottom: 'Page bottom' # Needed by Drupal Core
 
-# Information added by Drupal.org packaging script on 2026-09-16
-version: '10.6.17'
+# Information added by Drupal.org packaging script on 2026-09-26
+version: '10.6.18'
 project: 'drupal'
-datestamp: 1789574843
+datestamp: 1790460513

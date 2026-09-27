@@ -24,4 +24,5 @@ return array(
     'c7baa00073ee9c61edf148c51917cfb4' => $vendorDir . '/twig/twig/src/Resources/escaper.php',
     'f844ccf1d25df8663951193c3fc307c8' => $vendorDir . '/twig/twig/src/Resources/string_loader.php',
     '2f69d3914119f042cca9e44442d5ce95' => $baseDir . '/core/includes/bootstrap.inc',
+    '38a4a83ee9437fa4c0c7a481bbf0d2a0' => $baseDir . '/core/includes/guzzle_file_cookie_jar_shim.php',
 );

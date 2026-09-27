@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7e0de7e4fcc9cfd0c7ec2fbee43c03a4
+class ComposerStaticInit95d75f6f58f0f1debac48418edeba917
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -25,6 +25,7 @@ class ComposerStaticInit7e0de7e4fcc9cfd0c7ec2fbee43c03a4
         'c7baa00073ee9c61edf148c51917cfb4' => __DIR__ . '/..' . '/twig/twig/src/Resources/escaper.php',
         'f844ccf1d25df8663951193c3fc307c8' => __DIR__ . '/..' . '/twig/twig/src/Resources/string_loader.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/core/includes/bootstrap.inc',
+        '38a4a83ee9437fa4c0c7a481bbf0d2a0' => __DIR__ . '/../..' . '/core/includes/guzzle_file_cookie_jar_shim.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -406,10 +407,10 @@ class ComposerStaticInit7e0de7e4fcc9cfd0c7ec2fbee43c03a4
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7e0de7e4fcc9cfd0c7ec2fbee43c03a4::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7e0de7e4fcc9cfd0c7ec2fbee43c03a4::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit7e0de7e4fcc9cfd0c7ec2fbee43c03a4::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit7e0de7e4fcc9cfd0c7ec2fbee43c03a4::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit95d75f6f58f0f1debac48418edeba917::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit95d75f6f58f0f1debac48418edeba917::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit95d75f6f58f0f1debac48418edeba917::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit95d75f6f58f0f1debac48418edeba917::$classMap;
 
         }, null, ClassLoader::class);
     }
