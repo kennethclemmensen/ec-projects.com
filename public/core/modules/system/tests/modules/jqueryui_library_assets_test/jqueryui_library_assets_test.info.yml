@@ -4,7 +4,7 @@ description: 'Tests jQuery UI library asset loading'
 package: Testing
 # version: VERSION
 
-# Information added by Drupal.org packaging script on 2026-09-26
-version: '10.6.18'
+# Information added by Drupal.org packaging script on 2026-10-14
+version: '10.6.19'
 project: 'drupal'
-datestamp: 1790460513
+datestamp: 1791996270
