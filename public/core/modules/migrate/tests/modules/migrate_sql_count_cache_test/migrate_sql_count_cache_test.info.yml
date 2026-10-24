@@ -3,7 +3,7 @@ name: Migrate SqlBase count cache test
 description: Provides a source plugin to test that counts are cached in SQL sources.
 package: Testing
 
-# Information added by Drupal.org packaging script on 2026-10-14
-version: '10.6.19'
+# Information added by Drupal.org packaging script on 2026-10-21
+version: '10.6.20'
 project: 'drupal'
-datestamp: 1791996270
+datestamp: 1792580863

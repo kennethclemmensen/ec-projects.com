@@ -13,7 +13,7 @@ configure: forum.overview
 lifecycle: deprecated
 lifecycle_link: "https://www.drupal.org/node/3223395#s-forum"
 
-# Information added by Drupal.org packaging script on 2026-10-14
-version: '10.6.19'
+# Information added by Drupal.org packaging script on 2026-10-21
+version: '10.6.20'
 project: 'drupal'
-datestamp: 1791996270
+datestamp: 1792580863
